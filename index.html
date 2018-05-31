@@ -12,28 +12,97 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/mainSingle.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <section class="container-menu-top">
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="toggleMenu">
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
 
-                    <ul id="menu">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Info</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                    </ul>
+            <div class="wrapper-logo-menu">
+                <img src="img/logo-proyecto-internas.png" alt="">
+            </div>
+
+            <div class="social-media-menu float-right">
+                <a href="#"><img src="img/twitter-menu.png"></a>
+                <a href="#"><img src="img/facebook-menu.png"></a>
+                <a href="#"><img src="img/gplus-menu.png"></a>
+            </div>
+
+
+            <!-- NOTE: ITEMS MENU -->
+            <div class="white-background-items-menu">
+
+                <div class="wrapper-items-menu">
+                    <div class="items-menu">
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </section>
         <section class="container-home-main-banner">
             <div class="container">
@@ -202,3 +271,23 @@
 
     </body>
 </html>
+<script type="text/javascript">
+$(".hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    if ( $(this).hasClass("is-active") ) {
+        console.log("epa");
+    } else {
+        console.log("epa no");
+    }
+});
+$(document).ready(function(){
+    $(".items-menu").owlCarousel({
+        centerMode          : false,
+        dotsContainer 		: '.the-dots',
+        smartSpeed          : 1000,
+        items 		 	  	: 4,
+        dots  	 		 	: true,
+        loop 				: false,
+    });
+});
+</script>
