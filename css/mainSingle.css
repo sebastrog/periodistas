@@ -97,8 +97,55 @@
     /* overflow: auto !important; */
 }
 
-.theClass {
-    
+.quote {
+    width: 370px;
+    height: 172px;
+    position: absolute;
+    right: -460px;
+    background-image: url(../img/bg-quote.png);
+    background-size: 370px;
+    background-repeat: no-repeat;
+    padding: 15px 40px;
+    display: none;
+}
+
+.quote:before {
+    content: '';
+    display: block;
+    width: 57px;
+    height: 57px;
+    background-image: url(../img/quote-start.png);
+    position: absolute;
+    top: -28px;
+    left: -26px;
+}
+.quote:after {
+    content: '';
+    display: block;
+    width: 57px;
+    height: 57px;
+    background-image: url(../img/quote-end.png);
+    position: absolute;
+    bottom: -28px;
+    right: -25px;
+}
+.quote p {
+    line-height: 25px;
+}
+
+.quote1 {
+    margin-top: -150px;
+}
+.quote2 {
+    margin-top: -200px;
+}
+
+.quote3 {
+    margin-top: -60px;
+}
+
+.hehe {
+    position: relative;
 }
 
 .staticImageMap {
