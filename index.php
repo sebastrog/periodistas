@@ -23,16 +23,10 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="js/additional-methods.js"></script>
     <script src="js/main.js"></script>
     
     <!-- scripts main page -->
-    <script type="text/javascript">
-
-    </script>
-
+    <script type="text/javascript"></script>
         
     </body>
 </html>
