@@ -17,7 +17,7 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <div class="">
+        <!-- <div class="">
             <section class="container-menu-top">
                 <div class="toggleMenu">
                     <button class="hamburger hamburger--spin" type="button">
@@ -39,7 +39,7 @@
 
 
             </section>
-            <!-- NOTE: ITEMS MENU -->
+            
             <div class="white-background-items-menu">
                 <div class="wrapper-items-menu">
                     <div class="items-menu owl-carousel">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <section class="container-home-main-banner">
             <div class="container">
                 <div class="row wrapper-top-header-logos">
@@ -290,36 +290,36 @@
     </body>
 </html>
 <script type="text/javascript">
-$(".hamburger").on("click", function(){
-    $(this).toggleClass("is-active");
-    if ( $(this).hasClass("is-active") ) {
-        $(".white-background-items-menu").fadeIn();
-        $(".items-menu").owlCarousel({
-            centerMode          : false,
-            dotsContainer 		: '.the-dots',
-            smartSpeed          : 1000,
-            margin              : 10,
-            dots  	 		 	: true,
-            loop 				: false,
-            responsive : {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                991: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        });
-    } else {
-        $(".white-background-items-menu").fadeOut();
-    }
-});
+// $(".hamburger").on("click", function(){
+//     $(this).toggleClass("is-active");
+//     if ( $(this).hasClass("is-active") ) {
+//         $(".white-background-items-menu").fadeIn();
+//         $(".items-menu").owlCarousel({
+//             centerMode          : false,
+//             dotsContainer 		: '.the-dots',
+//             smartSpeed          : 1000,
+//             margin              : 10,
+//             dots  	 		 	: true,
+//             loop 				: false,
+//             responsive : {
+//                 0: {
+//                     items: 1
+//                 },
+//                 768: {
+//                     items: 2
+//                 },
+//                 991: {
+//                     items: 3
+//                 },
+//                 1200: {
+//                     items: 4
+//                 }
+//             }
+//         });
+//     } else {
+//         $(".white-background-items-menu").fadeOut();
+//     }
+// });
 // $(document).ready(function(){
 // });
 </script>
