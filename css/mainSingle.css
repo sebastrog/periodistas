@@ -247,12 +247,12 @@
 }
 
 .theTitle {
-    padding-top: 50px;
+    padding-top: 130px;
     color: #fff;
     text-align: center;
 }
 .theTitle h1 {
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Aleo Bold';
 }
 .iconDown {
@@ -385,6 +385,13 @@
     display: none;
     z-index: -1;
 }
+.headeR {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
 .staticImageMap img {
     object-fit: scale-down;
     max-width: 100%;
@@ -392,9 +399,18 @@
     height: 100%;
     object-position: 100% 50%;
 }
-
+.car1 {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+.car2 {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
 .sync1-item {
-    height: 400px;
+    height: 480px;
     position: relative;
     background-position: center center;
     background-size: cover;
@@ -402,6 +418,7 @@
 }
 .fooPic {
     position: absolute;
+    width: 100%;
     bottom: 0;
     left: 0;
     background-color: #ededed;
@@ -494,11 +511,14 @@
         position: relative;
         margin: 40px auto;
     }
+    .sync1-item {
+        height: 400px;
+    }
 }
 
 @media (max-width: 767px) {
     .theTitle {
-        padding-top: 30px;
+        padding-top: 70px;
         width: 80%;
         margin: 0 auto;
     }
