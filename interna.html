@@ -19,8 +19,15 @@
     </head>
     <body>
 
+    <div class="staticImageMap showmap1">
+        <img src="img/mapa-single-1.png">
+    </div>
+    <div class="staticImageMap showmap2">
+        <img src="img/mapa-single-2.png">
+    </div>
+
     <div id="fullpage">
-        <div class="section page" style="background-image: url(img/main-banner-top.png);">
+        <div class="section page sec1" style="background-image: url(img/main-banner-top.png);">
             <div class="theTitle">
                 <h1>Café aromatiza dos procesos de paz con las Farc</h1>
             </div>
@@ -28,7 +35,7 @@
             <div class="iconDown iconDownPosition js-iconDown"><i></i></div>
             <div class="borderTop"><img src="img/border-torn.png"></div>
         </div>
-        <div class="section page bgCover notOverFlow" style="background-image: url(img/mapa-single-1.png); background-attachment: fixed;">
+        <div class="section page sec2 bgCover notOverFlow" style="background-image: url(img/bgForMap1.png)"> 
             <div class="container">
                 <div class="row">
                     <div class="col-6">
@@ -62,11 +69,12 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="staticImageMap map1" style="background-image: url(img/mapa-single-1.png)"></div> -->
         </div>
 
         <!-- section -->
-        <div class="section page bgCover">
-            <div class="container">
+        <div class="section page sec3 bgCover"> 
+            <div class="container getHeight-2">
                 <div class="row">
                     <div class="col-6">
                         <div class="theText">
@@ -97,9 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="staticImage">
-                    <img src="img/mapa-single-2.png" alt="Mapa">
-                </div>
+                <!-- <div class="staticImageMap map2" style="background-image: url(img/mapa-single-2.png)"></div> -->
             </div>
         </div>
     </div>
@@ -112,6 +118,7 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     
     <!-- scripts main page -->
     <script type="text/javascript">
@@ -120,13 +127,44 @@
                 sectionSelector: '.page',
                 scrollOverflow: true,
                 verticalCentered:false,
-                parallax: false,
-		        parallaxOptions: {type: 'reveal', percentage: 100, property: 'translate'},
+                parallax: true,
+                parallaxOptions: {type: 'reveal', percentage: 100, property: 'translate'},
+                afterLoad: function(anchorLink, index){
+                    if(index == 2) {
+                        $(".showmap1").fadeIn();
+                    }
+                    if(index == 3) {
+                        $(".showmap2").fadeIn();
+                    }
+                },
+                onLeave: function(index, nextIndex, direction){
+                    if(index == 2) {
+                        $(".showmap1").fadeOut('fast');
+                    }
+
+                    if(index == 3) {
+                        $(".showmap2").fadeOut('fast');
+                    }
+                },
             });
+
+            // map = new Waypoint({
+            // element: document.getElementById('map'),
+            //     handler: function(direction) {
+            //         if (direction === 'down') {
+            //             console.log("entro")
+            //         } else {
+            //             console.log("salio")
+            //         }
+            //     },
+            //     offset: 'bottom-in-view'
+            // });
 
             $(".js-iconDown").on("click", function(){
                 $.fn.fullpage.moveSectionDown();
             });
+
+            // $(".staticImage").addClass("theClass");
         });
     </script>
         
