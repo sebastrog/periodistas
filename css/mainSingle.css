@@ -336,6 +336,7 @@
     width: 57px;
     height: 57px;
     background-image: url(../img/quote-start.png);
+    background-repeat: no-repeat;
     position: absolute;
     top: -28px;
     left: -26px;
@@ -347,6 +348,7 @@
     height: 57px;
     background-image: url(../img/quote-end.png);
     position: absolute;
+    background-repeat: no-repeat;
     bottom: -28px;
     right: -25px;
 }
@@ -389,4 +391,138 @@
     width: 100%;
     height: 100%;
     object-position: 100% 50%;
+}
+
+.sync1-item {
+    height: 400px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fooPic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ededed;
+    padding: 5px 30px;
+    border: 2px solid #9aa153;
+    border-top: 0;
+}
+.sync2-item {
+    cursor: pointer;
+}
+.sync2-item img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.bgtext {
+    background-color: #eef3f6;
+    margin-top: 110px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.frame {
+    margin-top: 40px;
+}
+.bgtext h3 {
+    font-weight: bold;
+    font-family: 'Aleo Bold';
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.bgtext p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'Aleo Regular'
+}
+
+.bigowlca .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    text-indent: 99999px;
+    overflow: hidden;
+    width: 34px;
+    height: 49px;
+    margin-top: -24.5px;
+    background-image: url(../img/nav-left.png)
+}
+.bigowlca .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    text-indent: 99999px;
+    overflow: hidden;
+    width: 34px;
+    height: 49px;
+    margin-top: -24.5px;
+    background-image: url(../img/nav-right.png)
+}
+
+.smallCa {
+    margin-top: 30px;
+}
+
+.sec4 {
+    padding-top: 30px;
+}
+
+.lastsection {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.quote40 {
+    padding: 10px 20px;
+    border-left: 2px solid #b9b9b9;
+}
+.quote40 p {
+    margin-bottom: 0;
+    color: #555555;
+    font-family: 'Aleo Italic';
+
+}
+
+@media (max-width: 991px) {
+    .quote {
+        display: block;
+        margin-top: 0;
+        left: 0;
+        position: relative;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .theTitle {
+        padding-top: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .quote {
+        width: 290px;
+        height: 172px;
+        background-size: 290px;
+    }
+    .quote p {
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .quote:before {
+        width: 47px;
+        height: 47px;
+        top: -8px;
+        left: -6px;
+        background-size: 30px;
+    }
+    .quote:after {
+        width: 47px;
+        height: 47px;
+        background-size: 30px;
+        bottom: 8px;
+        right: -25px;
+    }
 }
