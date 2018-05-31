@@ -1177,13 +1177,11 @@ section.container-menu-top {
     margin-left: 10px;
 }
 .wrapper-items-menu {
-    position: absolute;
     z-index: 1;
-    left: 0;
     width: 100%;
     background-color: white;
-    top: 75px;
-    /* padding: 0 110px; */
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .container-item-menu-report {
     width: 280px;
@@ -1217,8 +1215,42 @@ a:hover {
     background-position: left bottom, top right;
 }
 .white-background-items-menu {
-    padding: 0 110px !important;
-    width: 80%
+    padding: 0 110px;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    top: 75px;
+}
+.wrapper-items-menu .owl-nav {
+    width: 100%;
+}
+.wrapper-items-menu .owl-prev {
+    background-image: url(../img/arrow-left-carousel-menu.png);
+    display: block !important;
+    font-size: 0;
+    width: 34px;
+    height: 49px;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    margin-top: -25px;
+}
+.wrapper-items-menu .owl-next {
+    background-image: url(../img/arrow-right-carousel-menu.png);
+    display: block !important;
+    font-size: 0;
+    width: 34px;
+    height: 49px;
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    margin-top: -25px;
+}
+.wrapper-logo-menu img {
+    max-width: 100%;
 }
 /* ==========================================================================
    Helper classes
@@ -1568,5 +1600,32 @@ a:hover {
         margin-bottom: 0px;
         border-bottom: none;
         padding-bottom: 0px;
+    }
+    .white-background-items-menu {
+        padding: 0;
+    }
+    .wrapper-items-menu .owl-nav {
+        display: none;
+    }
+    section.container-menu-top {
+        padding: 12px 17px;
+    }
+    .wrapper-logo-menu {
+        width: 173px;
+        margin-left: 11px;
+    }
+    .toggleMenu {
+        margin-right: 0;
+    }
+    .white-background-items-menu {
+        top: 57px;
+    }
+    .social-media-menu.float-right img {
+        width: 20px;
+    }
+    .social-media-menu.float-right {
+        position: absolute;
+        top: 0;
+        right: 10px;
     }
 }
