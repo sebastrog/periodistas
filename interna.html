@@ -27,7 +27,7 @@
     </div>
 
     <div id="fullpage">
-        <div class="section page sec1" style="background-image: url(img/main-banner-top.png);">
+        <div id="element" class="section page sec1" style="background-image: url(img/main-banner-top.png); background-size: cover;">
             <div class="theTitle">
                 <h1>Café aromatiza dos procesos de paz con las Farc</h1>
             </div>
@@ -73,8 +73,8 @@
         </div>
 
         <!-- section -->
-        <div class="section page sec3 bgCover">
-            <div class="container getHeight-2">
+        <div class="section page sec3 bgCover" id="quote1">
+            <div class="container">
                 <div class="row">
                     <div class="col-6">
                         <div class="theText">
@@ -86,28 +86,13 @@
                             menos normal de las letras, al contrario de usar textos
                             como por ejemplo "Contenido aquí,contenido aquí".</p>
 
-                            <p>Es un hecho establecido hace demasiado tiempo
-                            que un lector se distraerá con el contenido del texto
-                            de un sitio mientras que mira su diseño. El punto
-                            de usar Lorem Ipsum es que tiene una distribución
-                            más o menos normal de las letras, al contrario de
-                            usar textos como por ejemplo "Contenido aquí, conte-
-                            nido aquí". Estos textos hacen parecerlo un español
-                            que se puede leer. Muchos paquetes de
-                            autoedición y editores de páginas web usan el Lorem
-                            Ipsum como su texto por defecto, y al hacer una bús-
-                            queda de "Lorem Ipsum" va a dar por resultado
-                            muchos sitios web que usan este texto se encuentran
-                            en estado de desarrollo. Muchas versiones han evolu-
-                            cionado a través de los años, algunas veces por
-                            accidente, otras veces a propósito (por ejemplo inser-
-                            tándole humor y cosas por el estilo).</p>
-                            <p>Es un hecho establecido hace demasiado tiempo que
-                            un lector se distraerá con el contenido del texto de un
-                            sitio mientras que mira su diseño. El punto de usar
-                            Lorem Ipsum es que tiene una distribución más o
-                            menos normal de las letras, al contrario de usar textos
-                            como por ejemplo "Contenido aquí,contenido aquí".</p>
+                            <div class="quote quote1">
+                                <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et.lore eu
+                                serunt mollit anim id estef.</p>
+                            </div>
 
                             <p>Es un hecho establecido hace demasiado tiempo
                             que un lector se distraerá con el contenido del texto
@@ -125,12 +110,29 @@
                             cionado a través de los años, algunas veces por
                             accidente, otras veces a propósito (por ejemplo inser-
                             tándole humor y cosas por el estilo).</p>
+
+                            <div class="quote quote2">
+                                <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et.lore eu
+                                serunt mollit anim id estef.</p>
+                            </div>
+
                             <p>Es un hecho establecido hace demasiado tiempo que
                             un lector se distraerá con el contenido del texto de un
                             sitio mientras que mira su diseño. El punto de usar
                             Lorem Ipsum es que tiene una distribución más o
                             menos normal de las letras, al contrario de usar textos
                             como por ejemplo "Contenido aquí,contenido aquí".</p>
+
+                            <div class="quote quote3">
+                                <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et.lore eu
+                                serunt mollit anim id estef.</p>
+                            </div>
 
                             <p>Es un hecho establecido hace demasiado tiempo
                             que un lector se distraerá con el contenido del texto
@@ -151,7 +153,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="staticImageMap map2" style="background-image: url(img/mapa-single-2.png)"></div> -->
             </div>
         </div>
     </div>
@@ -163,7 +164,6 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/jquery.slimscroll.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
 
     <!-- scripts main page -->
     <script type="text/javascript">
@@ -172,14 +172,33 @@
                 sectionSelector: '.page',
                 scrollOverflow: true,
                 verticalCentered:false,
-                parallax: true,
-                parallaxOptions: {type: 'reveal', percentage: 100, property: 'translate'},
+                // parallax: true,
+                // parallaxOptions: {type: 'reveal', percentage: 100, property: 'translate'},
+                responsiveWidth: 1199,
                 afterLoad: function(anchorLink, index){
                     if(index == 2) {
                         $(".showmap1").fadeIn();
                     }
                     if(index == 3) {
                         $(".showmap2").fadeIn();
+
+                        $("#quote1 .fp-scrollable").scroll(function (event) {
+                            scrolling = $(this).scrollTop();
+                            console.log(scrolling);
+                            quote1 = 50
+                            quote2 = 300
+                            quote3 = 400
+
+                            if(scrolling > quote1) {
+                                $(".quote1").fadeIn('slow');
+                            }
+                            if(scrolling > quote2) {
+                                $(".quote2").fadeIn('slow');
+                            }
+                            if(scrolling > quote3) {
+                                $(".quote3").fadeIn('slow');
+                            }
+                        });
                     }
                 },
                 onLeave: function(index, nextIndex, direction){
@@ -193,23 +212,20 @@
                 },
             });
 
-            // map = new Waypoint({
-            // element: document.getElementById('map'),
-            //     handler: function(direction) {
-            //         if (direction === 'down') {
-            //             console.log("entro")
-            //         } else {
-            //             console.log("salio")
-            //         }
-            //     },
-            //     offset: 'bottom-in-view'
+            // $('#waypoint').waypoint(function() {
+            //     console.log('Reached waypoint.');
+            // }, {
+            //     offset: 'bottom-in-view',
+            //     context: $("#waypoint").parent().addClass("hola")
             // });
 
             $(".js-iconDown").on("click", function(){
                 $.fn.fullpage.moveSectionDown();
             });
 
-            // $(".staticImage").addClass("theClass");
+            // test = $(".quotes").scroll();
+
+            // console.log(test)
         });
     </script>
 
