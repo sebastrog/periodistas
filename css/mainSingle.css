@@ -1,4 +1,50 @@
 .theText {
-    width: 300px;
-    margin-left: 50px;
+    padding: 50px 0;
+    /* width: 300px; */
+}
+.theText span {
+    font-size: 12px;    
+    font-family: 'Aleo Italic';
+    margin-bottom: 40px;
+    display: block;
+}
+.theText p {
+    font-family: 'Aleo Regular';
+    font-size: 18px;
+}
+.bgCover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.theTitle {
+    padding-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+.theTitle h1 {
+    font-size: 35px;
+    font-family: 'Aleo Bold';
+}
+.iconDown {
+    width: 58px;
+    height: 58px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/arrow-down.png);
+    transition: all .3s ease-in-out;
+}
+.iconDown:hover {
+    transform: scale(1.1);
+}
+
+.iconDownPosition {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 10%;
+    cursor: pointer;
 }
