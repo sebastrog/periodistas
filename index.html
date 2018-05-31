@@ -12,8 +12,6 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/mainSingle.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -43,7 +41,7 @@
             <div class="white-background-items-menu">
 
                 <div class="wrapper-items-menu">
-                    <div class="items-menu">
+                    <div class="items-menu owl-carousel">
                         <div class="container-item-menu-report">
                             <a href="#">
                                 <div class="wrapper-img-menu-report">
@@ -280,7 +278,7 @@ $(".hamburger").on("click", function(){
         console.log("epa no");
     }
 });
-$(document).ready(function(){
+// $(document).ready(function(){
     $(".items-menu").owlCarousel({
         centerMode          : false,
         dotsContainer 		: '.the-dots',
@@ -289,5 +287,5 @@ $(document).ready(function(){
         dots  	 		 	: true,
         loop 				: false,
     });
-});
+// });
 </script>
