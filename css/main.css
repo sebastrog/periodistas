@@ -169,8 +169,10 @@ textarea {
     }
 /* END FONTS */
 
-
-
+/* NOTE: Mauricio Style */
+section.container-home-main-banner {
+    background-image: url(../img/banner-header-colombia.png);
+}
 
 
 
