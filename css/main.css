@@ -95,16 +95,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* FONTS */
+    @font-face {
+        font-family: 'Aleo Bold Italic';
+        src: url('fonts/aleo-bolditalic-webfont-webfont.eot');
+        src: url('fonts/aleo-bolditalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/aleo-bolditalic-webfont-webfont.woff2') format('woff2'),
+            url('fonts/aleo-bolditalic-webfont-webfont.woff') format('woff'),
+            url('fonts/aleo-bolditalic-webfont-webfont.ttf') format('truetype'),
+            url('fonts/aleo-bolditalic-webfont-webfont.svg#aleobolditalic') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+    @font-face {
+        font-family: 'Aleo Bold';
+        src: url('fonts/aleo-bold-webfont-webfont.eot');
+        src: url('fonts/aleo-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/aleo-bold-webfont-webfont.woff2') format('woff2'),
+            url('fonts/aleo-bold-webfont-webfont.woff') format('woff'),
+            url('fonts/aleo-bold-webfont-webfont.ttf') format('truetype'),
+            url('fonts/aleo-bold-webfont-webfont.svg#aleobold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+    @font-face {
+        font-family: 'Aleo Italic';
+        src: url('fonts/aleo-italic-webfont-webfont.eot');
+        src: url('fonts/aleo-italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/aleo-italic-webfont-webfont.woff2') format('woff2'),
+            url('fonts/aleo-italic-webfont-webfont.woff') format('woff'),
+            url('fonts/aleo-italic-webfont-webfont.ttf') format('truetype'),
+            url('fonts/aleo-italic-webfont-webfont.svg#aleoitalic') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+    @font-face {
+        font-family: 'Aleo Light Italic';
+        src: url('fonts/aleo-lightitalic-webfont-webfont.eot');
+        src: url('fonts/aleo-lightitalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/aleo-lightitalic-webfont-webfont.woff2') format('woff2'),
+            url('fonts/aleo-lightitalic-webfont-webfont.woff') format('woff'),
+            url('fonts/aleo-lightitalic-webfont-webfont.ttf') format('truetype'),
+            url('fonts/aleo-lightitalic-webfont-webfont.svg#aleolightitalic') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+    @font-face {
+        font-family: 'Aleo Light';
+        src: url('fonts/aleo-light-webfont-webfont.eot');
+        src: url('fonts/aleo-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/aleo-light-webfont-webfont.woff2') format('woff2'),
+            url('fonts/aleo-light-webfont-webfont.woff') format('woff'),
+            url('fonts/aleo-light-webfont-webfont.ttf') format('truetype'),
+            url('fonts/aleo-light-webfont-webfont.svg#aleolight') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 
-
-
-
-
-
+    @font-face {
+        font-family: 'Aleo Regular';
+        src: url('fonts/aleo-regular-webfont-webfont.eot');
+        src: url('fonts/aleo-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/aleo-regular-webfont-webfont.woff2') format('woff2'),
+            url('fonts/aleo-regular-webfont-webfont.woff') format('woff'),
+            url('fonts/aleo-regular-webfont-webfont.ttf') format('truetype'),
+            url('fonts/aleo-regular-webfont-webfont.svg#aleoregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+/* END FONTS */
 
 
 
