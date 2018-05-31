@@ -1539,6 +1539,12 @@ a:hover {
         border-bottom: 1px solid white;
         padding-bottom: 40px;
     }
+
+    .icons-social-media-header img {
+        width: 25px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        border-radius: 100%;
+    }
 }
 
 
