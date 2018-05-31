@@ -173,9 +173,16 @@ textarea {
 section.container-home-main-banner {
     background-image: url(../img/banner-header-colombia.png);
     height: 100vh;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-color: #90caf2; */
 }
 .floating-bottom {
     position: absolute;
@@ -209,7 +216,7 @@ span.capital-letter {
 .wrapper-text-home p {
     color: #555555;
     font-family: Aleo Light;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bolder;
 }
 .wrapper-text-home {
@@ -249,9 +256,9 @@ section.wrapper-reports-list-home {
 footer {
     background-image: url(../img/background-footer.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: center top;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 19px;
     margin-top: 120px;
 }
@@ -259,7 +266,7 @@ footer .container {
     max-width: 1260px;
 }
 footer .container .col-12 > div > h4 {
-    color: #fcfafa;
+    color: #7f8181;
     font-family: Aleo Light;
     font-size: 21px;
     margin: 0 0 59px 0;
@@ -279,12 +286,25 @@ footer .container .col-12 > div {
     max-width: 100%;
 }
 .left-footer > div {
-    padding-right: 46px;
-    border-right: 1px solid white;
+    padding-right: 30px;
+    border-right: 1px solid #939393;
     margin-right: 30px;
 }
 .container-logos-right-footer > div:first-child {
-    margin-right: 70px;
+    margin-right: 30px;
+}
+.bottom-footer img {
+    width: 130px;
+}
+.bottom-footer span {
+    color: #959595;
+    font-family: Aleo Regular;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.bottom-footer {
+    margin-top: 20px;
 }
 /*
  * Made by Erik Terwan
@@ -1459,6 +1479,10 @@ a:hover {
     }
     .middle-logo {
         margin: 0;
+    }
+    .bottom-footer.float-right {
+        width: 100%;
+        text-align: right;
     }
 }
 

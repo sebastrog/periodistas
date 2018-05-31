@@ -1,5 +1,5 @@
 /*OWL CAROUSEL*/
-   /* 
+   /*
     *  Owl Carousel - Animate Plugin
     */
     .owl-carousel .animated {
@@ -18,12 +18,12 @@
         -webkit-animation-name: fadeOut;
         animation-name: fadeOut;
       }
-   
+
       @-webkit-keyframes fadeOut {
         0% {
           opacity: 1;
         }
-   
+
         100% {
           opacity: 0;
         }
@@ -32,13 +32,13 @@
         0% {
           opacity: 1;
         }
-   
+
         100% {
           opacity: 0;
         }
       }
-   
-      /* 
+
+      /*
        *  Owl Carousel - Auto Height Plugin
        */
       .owl-height {
@@ -48,8 +48,8 @@
         -o-transition: height 500ms ease-in-out;
         transition: height 500ms ease-in-out;
       }
-   
-      /* 
+
+      /*
        *  Core Owl Carousel CSS File
        */
       .owl-carousel {
@@ -113,7 +113,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-   
+
         -webkit-font-smoothing: subpixel-antialiased;
         -webkit-transform: translate3d(0,0,0);
       }
@@ -141,13 +141,13 @@
       .owl-carousel.owl-rtl .owl-item {
         float: right;
       }
-   
+
       /* No Js */
       .no-js .owl-carousel {
         display: block;
       }
-   
-      /* 
+
+      /*
        *  Owl Carousel - Lazy Load Plugin
        */
       .owl-carousel .owl-item .owl-lazy {
@@ -161,8 +161,8 @@
       .owl-carousel .owl-item img {
         transform-style: preserve-3d;
       }
-   
-      /* 
+
+      /*
        *  Owl Carousel - Video Plugin
        */
       .owl-carousel .owl-video-wrapper {
@@ -224,7 +224,7 @@
     /* width: 300px; */
 }
 .theText span {
-    font-size: 12px;    
+    font-size: 12px;
     font-family: 'Aleo Italic';
     margin-bottom: 40px;
     display: block;
@@ -252,7 +252,7 @@
     text-align: center;
 }
 .theTitle h1 {
-    font-size: 25px;
+    font-size: 38px;
     font-family: 'Aleo Bold';
 }
 .iconDown {
@@ -486,10 +486,16 @@
 .sec4 {
     padding-top: 30px;
 }
+.sec5 {
+    background-color: #fff;
+}
 
 .lastsection {
     background-color: #fff;
     padding: 50px 0;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .quote40 {
@@ -498,9 +504,18 @@
 }
 .quote40 p {
     margin-bottom: 0;
-    color: #555555;
+    color: #fff;
     font-family: 'Aleo Italic';
+}
 
+.nottopfoter {
+    margin-top: -25px;
+}
+
+@media (max-width:1024px) {
+    footer {
+        text-align: center;
+    }
 }
 
 @media (max-width: 991px) {
