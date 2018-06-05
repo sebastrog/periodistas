@@ -196,6 +196,7 @@ section.container-home-main-banner {
 }
 .icons-logos-external-links {
     padding-left: 40px;
+    margin-top: 75px;
 }
 .icons-social-media-header a {
     margin-left: 12px;
@@ -1572,6 +1573,15 @@ a:hover {
         width: 25px;
         box-shadow: 0 0 5px rgba(0,0,0,0.5);
         border-radius: 100%;
+    }
+    .wrapper-logo-menu img {
+        max-width: 160px;
+    }
+    .toggleMenu {
+        margin-right: 40px;
+    }
+    .icons-logos-external-links {
+        margin-top: 55px;
     }
 }
 

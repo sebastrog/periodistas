@@ -17,6 +17,96 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        <div class="headeR">
+            <section class="container-menu-top">
+                <div class="toggleMenu">
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+    
+                <div class="wrapper-logo-menu">
+                    <a href="https://verdadabierta.com/especiales-v/2018/ddhh-posconflicto-colombiano">
+                        <img src="img/logo-proyecto-internas.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="social-media-menu float-right">
+                    <a target="_blank" href="https://twitter.com/share?text=Vulneraciones a los derechos humanos en planadas&url=https://verdadabierta.com/especiales-v/2018/ddhh-posconflicto-colombiano/cafe-aromatiza-procesos-paz.html"><img src="img/twitter-menu.png"></a>
+                    <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://verdadabierta.com/especiales-v/2018/ddhh-posconflicto-colombiano/cafe-aromatiza-procesos-paz.html&title=Vulneraciones a los derechos humanos en planadas"><img src="img/facebook-menu.png"></a>
+                    <a target="_blank" href="https://plus.google.com/share?url=https://verdadabierta.com/especiales-v/2018/ddhh-posconflicto-colombiano/cafe-aromatiza-procesos-paz.html"><img src="img/gplus-menu.png"></a>
+                </div>
+    
+    
+            </section>
+            <!-- NOTE: ITEMS MENU -->
+            <div class="white-background-items-menu">
+                <div class="wrapper-items-menu">
+                    <div class="items-menu owl-carousel">
+                        <div class="container-item-menu-report">
+                            <a href="cafe-aromatiza-procesos-paz.html">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/Foto-portada-Planadas-Tolima.jpg" alt="">
+                                </div>
+                                <h3>Café aromatiza dos procesos de paz</h3>
+                            </a>
+                        </div>
+                        <!--
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        <div class="container-item-menu-report">
+                            <a href="#">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/img-post-1.png" alt="">
+                                </div>
+                                <h3>Vulneraciones a los derechos humanos en planadas</h3>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- <div class="">
             <section class="container-menu-top">
                 <div class="toggleMenu">
@@ -303,8 +393,93 @@
     <script src="js/main.js"></script>
 
     <!-- scripts main page -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        var sync1 = $('#sync1'),
+            sync2 = $('#sync2'),
+            duration = 300,
+            thumbs = 4;
+
+        sync1.on('click', '.owl-next', function () {
+            sync2.trigger('next.owl.carousel')
+        });
+        sync1.on('click', '.owl-prev', function () {
+            sync2.trigger('prev.owl.carousel')
+        });
+
+
+
+        // Start Carousel
+        sync1.owlCarousel({
+            // center : true,
+            loop: true,
+            items : 1,
+            margin:0,
+            nav : true,
+            navText : ["&lsaquo;","&rsaquo;"]
+        })
+        .on('dragged.owl.carousel', function (e) {
+                if (e.relatedTarget.state.direction == 'left') {
+                    sync2.trigger('next.owl.carousel')
+                } else {
+                    sync2.trigger('prev.owl.carousel')
+                }
+        });
+
+        flag = false;
+
+        sync2.owlCarousel({
+            // center: true,
+            loop: true,
+            items : thumbs,
+            margin:1,
+            nav : false,
+            navText : ["&lsaquo;","&rsaquo;"]
+        })
+        .on('click', '.owl-item', function() {
+            var i = $(this).index()-(thumbs);
+            sync2.trigger('to.owl.carousel', [i, duration, true]);
+            sync1.trigger('to.owl.carousel', [i, duration, true]);
+        })
+        .on('changed.owl.carousel', function (e) {
+            // console.log(e.item.index-thumbs);
+            if (!flag) {
+                flag = true;
+                sync1.trigger('to.owl.carousel', [e.item.index-thumbs, duration, true]);
+                flag = false;
+            }
+        });
+
+        $(".hamburger").on("click", function(){
+            $(this).toggleClass("is-active");
+            if ( $(this).hasClass("is-active") ) {
+                $(".white-background-items-menu").fadeIn();
+                $(".items-menu").owlCarousel({
+                    centerMode          : false,
+                    dotsContainer 		: '.the-dots',
+                    smartSpeed          : 1000,
+                    margin              : 10,
+                    dots  	 		 	: true,
+                    loop 				: false,
+                    responsive : {
+                        0: {
+                            items: 1
+                        },
+                        768: {
+                            items: 2
+                        },
+                        991: {
+                            items: 3
+                        },
+                        1200: {
+                            items: 4
+                        }
+                    }
+                });
+            } else {
+                $(".white-background-items-menu").fadeOut();
+            }
+        });
+    </script>
 
     </body>
 </html>
-<script type="text/javascript"></script>
