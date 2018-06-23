@@ -196,7 +196,7 @@ section.container-home-main-banner {
 }
 .icons-logos-external-links {
     padding-left: 40px;
-    margin-top: 75px;
+    margin-top: 65px;
 }
 .icons-social-media-header a {
     margin-left: 12px;
@@ -375,7 +375,7 @@ footer .container .col-12 > div {
 
 .toggleMenu {
     display: none;
-    margin-right: 70px;
+    margin-right: 30px;
 }
 .toggleMenu .hamburger {
     padding: 0;
@@ -1212,6 +1212,9 @@ footer .container .col-12 > div {
 nav {
     margin-right: 56px;
 }
+.wrapper-logo-menu {
+    width: 230px;
+}
 section.container-menu-top > * {
     display: inline-block;
     vertical-align: middle;
@@ -1301,6 +1304,13 @@ a:hover {
 .wrapper-logo-menu img {
     max-width: 100%;
 }
+.mobileImage {
+    display: none;
+}
+.mobileImage img {
+    width: 100%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1474,10 +1484,6 @@ a:hover {
 
 
 
-
-
-
-
 @media (max-width: 1200px) {  }
 
 @media (max-width: 992px) {  }
@@ -1575,7 +1581,7 @@ a:hover {
         border-radius: 100%;
     }
     .wrapper-logo-menu img {
-        max-width: 160px;
+        max-width: 100%;
     }
     .toggleMenu {
         margin-right: 40px;
@@ -1679,21 +1685,21 @@ a:hover {
         padding: 12px 17px;
     }
     .wrapper-logo-menu {
-        width: 173px;
+        width: 133px;
         margin-left: 11px;
     }
     .toggleMenu {
         margin-right: 0;
     }
     .white-background-items-menu {
-        top: 57px;
+        top: 54px;
     }
     .social-media-menu.float-right img {
         width: 20px;
     }
     .social-media-menu.float-right {
         position: absolute;
-        top: 0;
+        top: 7px;
         right: 10px;
     }
 }

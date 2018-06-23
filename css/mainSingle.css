@@ -580,7 +580,9 @@
         margin: 0 auto;
     }
     .bigowlca .owl-prev, .bigowlca .owl-next {
-        top: 15%;
+        /* top: 15%; */
+        /* top: 160px; */
+        top: 30%;
     }
     .quote {
         width: 260px;
@@ -592,7 +594,14 @@
         font-size: 12px;
     }
     .sync1-item {
-        height: 300px;
+        height: 100%;
+        background-image: none !important;
+    }
+    .mobileImage {
+        display: block;
+    }
+    .fooPic {
+        position: relative;
     }
     .quote:before {
         width: 47px;
