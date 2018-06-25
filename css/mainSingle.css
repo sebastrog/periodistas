@@ -753,6 +753,20 @@ width: 160px;
     object-position: 50% 50%;
 }
 
+.quote-h-30 p {
+    font-size: 14.8px;
+    line-height: 22px;
+}
+
+.backm1 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+}
+
 @media (max-width:1024px) {
     footer {
         text-align: center;
@@ -770,6 +784,11 @@ width: 160px;
     .sync1-item {
         height: 400px;
     }
+    .quote.quote-h-30 {
+        width: 380px;
+        height: 150px;
+        background-size: 380px 150px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -777,6 +796,9 @@ width: 160px;
         padding-top: 70px;
         width: 80%;
         margin: 0 auto;
+    }
+    .theTitle h1 {
+        font-size: 25px;
     }
     .bigowlca .owl-prev, .bigowlca .owl-next {
         /* top: 15%; */
@@ -821,6 +843,11 @@ width: 160px;
     }
     .themobileMenu {
         display: block;
+    }
+    .quote.quote-h-30 {
+        width: 270px;
+        height: 160px;
+        background-size: 270px 130px;
     }
 }
 
