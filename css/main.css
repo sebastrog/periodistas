@@ -171,7 +171,7 @@ textarea {
 
 /* NOTE: Mauricio Style */
 section.container-home-main-banner {
-    background-image: url(../img/banner-header-colombia.png);
+    /* background-image: url(../img/banner-header-colombia3.jpg); */
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -1274,7 +1274,8 @@ a:hover {
     width: 100%;
     background-color: white;
     z-index: 1;
-    top: 75px;
+    top: 85px;
+    transition: top .4s ease-in-out;
 }
 .wrapper-items-menu .owl-nav {
     width: 100%;
@@ -1591,11 +1592,17 @@ a:hover {
     }
 }
 
+@media (max-width: 767px) {
+    .logosGr {
+        display: none !important;
+    }
+}
+
 
 
 @media (max-width: 576px) {
     section.container-home-main-banner{
-        height: 42vh;
+        height: 50vh;
     }
     .wrapper-text-home {
         padding-top: 26px;

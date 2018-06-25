@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/jquery.fullpage.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/mainSingle.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -41,9 +42,8 @@
                 <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://verdadabierta.com/especiales-v/2018/ddhh-posconflicto-colombiano/cafe-aromatiza-procesos-paz.html&title=Vulneraciones a los derechos humanos en planadas"><img src="img/facebook-menu.png"></a>
                 <a target="_blank" href="https://plus.google.com/share?url=https://verdadabierta.com/especiales-v/2018/ddhh-posconflicto-colombiano/cafe-aromatiza-procesos-paz.html"><img src="img/gplus-menu.png"></a>
             </div>
-
-
         </section>
+
         <!-- NOTE: ITEMS MENU -->
         <div class="white-background-items-menu">
             <div class="wrapper-items-menu">
@@ -54,6 +54,15 @@
                                 <img src="img/Foto-portada-Planadas-Tolima.jpg" alt="">
                             </div>
                             <h3>Café aromatiza dos procesos de paz</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="container-item-menu-report">
+                        <a href="#">
+                            <div class="wrapper-img-menu-report">
+                                <img src="img/img-post-1.png" alt="">
+                            </div>
+                            <h3>Vulneraciones a los derechos humanos en planadas</h3>
                         </a>
                     </div>
                     <!--
@@ -97,19 +106,61 @@
                             <h3>Vulneraciones a los derechos humanos en planadas</h3>
                         </a>
                     </div>
-                    <div class="container-item-menu-report">
-                        <a href="#">
-                            <div class="wrapper-img-menu-report">
-                                <img src="img/img-post-1.png" alt="">
-                            </div>
-                            <h3>Vulneraciones a los derechos humanos en planadas</h3>
-                        </a>
-                    </div>
                     -->
+                </div>
+
+                <div class="themobileMenu">
+                    <div class="mobileSlider">
+                        <!-- item -->
+                        <div class="item-mobileSlider">
+                            <a href="cafe-aromatiza-procesos-paz.html">
+                                <div class="container-item-report d-flex align-items-center">
+                                    <div class="wrapper-img-report">
+                                        <img src="img/Foto-portada-Planadas-Tolima.jpg" alt="">
+                                    </div>
+                                    <h3>Café aromatiza dos procesos de paz</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item -->
+                        <div class="item-mobileSlider">
+                            <a href="cafe-aromatiza-procesos-paz.html">
+                                <div class="container-item-report d-flex align-items-center">
+                                    <div class="wrapper-img-report">
+                                        <img src="img/img-post-1.png" alt="">
+                                    </div>
+                                    <h3>Café aromatiza dos procesos de paz</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item -->
+                        <div class="item-mobileSlider">
+                            <a href="cafe-aromatiza-procesos-paz.html">
+                                <div class="container-item-report d-flex align-items-center">
+                                    <div class="wrapper-img-report">
+                                        <img src="img/img-post-1.png" alt="">
+                                    </div>
+                                    <h3>Café aromatiza dos procesos de paz</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item -->
+                        <div class="item-mobileSlider">
+                            <a href="cafe-aromatiza-procesos-paz.html">
+                                <div class="container-item-report d-flex align-items-center">
+                                    <div class="wrapper-img-report">
+                                        <img src="img/img-post-1.png" alt="">
+                                    </div>
+                                    <h3>Café aromatiza dos procesos de paz</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="" id="waypointHeader"></div>
 
     <div class="staticImageMap showmap1">
         <img src="img/mapa-single-1.png">
@@ -457,10 +508,23 @@
     <script src="js/main.js"></script>
     <!-- <script src="js/jquery.fullpage.min.js"></script> -->
     <!-- <script src="js/jquery.slimscroll.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
     <script src="js/waypoints.min.js"></script>
 
     <!-- scripts main page -->
     <script type="text/javascript">
+
+        header = new Waypoint({
+            element: document.getElementById('waypointHeader'),
+            handler: function(direction) {
+                if (direction === 'down') {
+                    $(".headeR").addClass("activeH");
+                } else {
+                    $(".headeR").removeClass("activeH");
+                }
+            }
+        });
+
         $(document).ready(function() {
             // waypoint
                 map1 = new Waypoint({
@@ -605,31 +669,44 @@
         });
 
         $(".hamburger").on("click", function(){
-            $(this).toggleClass("is-active");
+            $(this).toggleClass("is-active ");
+            $("body").toggleClass("bodyhide");
             if ( $(this).hasClass("is-active") ) {
                 $(".white-background-items-menu").fadeIn();
-                $(".items-menu").owlCarousel({
-                    centerMode          : false,
-                    dotsContainer 		: '.the-dots',
-                    smartSpeed          : 1000,
-                    margin              : 10,
-                    dots  	 		 	: true,
-                    loop 				: false,
-                    responsive : {
-                        0: {
-                            items: 1
-                        },
-                        768: {
-                            items: 2
-                        },
-                        991: {
-                            items: 3
-                        },
-                        1200: {
-                            items: 4
+
+                _width = $(document).width();
+                
+                if( _width > 767 ) {
+                    $(".items-menu").owlCarousel({
+                        centerMode          : false,
+                        dotsContainer 		: '.the-dots',
+                        smartSpeed          : 1000,
+                        margin              : 10,
+                        dots  	 		 	: true,
+                        loop 				: false,
+                        responsive : {
+                            0: {
+                                items: 1
+                            },
+                            768: {
+                                items: 2
+                            },
+                            991: {
+                                items: 3
+                            },
+                            1200: {
+                                items: 4
+                            }
                         }
-                    }
-                });
+                    });
+                } else {
+                    $('.mobileSlider').slick({
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        vertical: true
+                    });
+                }
             } else {
                 $(".white-background-items-menu").fadeOut();
             }
