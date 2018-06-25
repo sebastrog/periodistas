@@ -1361,6 +1361,9 @@ a:hover {
 .section-body-article-2 {
     padding: 90px 0px;
 }
+.float-left img {
+    max-width: 100%;
+}
 /* ARTÍCULO 2 */
 
 /* ==========================================================================
