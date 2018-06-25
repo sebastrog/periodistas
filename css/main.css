@@ -1311,6 +1311,57 @@ a:hover {
 .mobileImage img {
     width: 100%;
 }
+.content p, .content span {
+    color: #555555;
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    font-family: Aleo Light;
+}
+.content .float-left {
+    margin-right: 15px;
+    position: relative;
+    top: 13px;
+}
+.float-left span {
+    display: block;
+    font-size: 19px;
+    font-family: Aleo Light;
+    border-left: 6px solid #c1763a;
+    padding-left: 17px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.content blockquote {
+    background-image: url(../img/quote-content-start.png), url(../img/quote-content-end.png);
+    font-size: 30px;
+    font-family: Aleo Light;
+    font-weight: 100;
+    color: #555;
+    width: 89%;
+    margin: 0 auto 60px auto;
+    padding: 20px 50px 0px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top,right bottom;
+}
+
+
+/* ARTÍCULO 2 */
+.wrapper-video-embebed iframe {
+    width: 100%;
+    height: calc(100vh - 68px);
+    margin-top: 68px;
+}
+.section-body-article-2 h1 {
+    font-family: Aleo Bold;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0 0 75px 0;
+}
+.section-body-article-2 {
+    padding: 90px 0px;
+}
+/* ARTÍCULO 2 */
 
 /* ==========================================================================
    Helper classes
