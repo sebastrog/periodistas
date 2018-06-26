@@ -1266,6 +1266,9 @@ a:hover {
     background-repeat: no-repeat;
     background-position: left bottom, top right;
 }
+.orange-border {
+    background-image: url(../img/border-left-posts-menu-orange.png), url(../img/border-right-posts-menu-orange.png);
+}
 .white-background-items-menu {
     padding: 0 110px;
     display: none;
@@ -1313,7 +1316,7 @@ a:hover {
 }
 .content p, .content span {
     color: #555555;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 100;
     margin-bottom: 40px;
     font-family: Aleo Light;
@@ -1334,7 +1337,7 @@ a:hover {
 }
 .content blockquote {
     background-image: url(../img/quote-content-start.png), url(../img/quote-content-end.png);
-    font-size: 30px;
+    font-size: 24px;
     font-family: Aleo Light;
     font-weight: 100;
     color: #555;
