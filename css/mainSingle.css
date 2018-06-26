@@ -849,6 +849,9 @@ width: 160px;
         height: 160px;
         background-size: 270px 130px;
     }
+    .wrapper-video-embebed iframe {
+        margin-top: 55px;
+    }
 }
 
 @media (max-width: 580px) {

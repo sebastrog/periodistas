@@ -21,7 +21,7 @@
         <title>DDHH Posconflicto</title>
     </head>
     <body>
-        <div class="headeR">
+        <div class="headeR noway">
             <section class="container-menu-top">
                 <div class="toggleMenu">
                     <button class="hamburger hamburger--spin" type="button">
@@ -56,7 +56,18 @@
             <!-- NOTE: ITEMS MENU -->
             <div class="white-background-items-menu">
                 <div class="wrapper-items-menu">
+                    <!-- desktop -->
                     <div class="items-menu owl-carousel">
+
+                        <div class="container-item-menu-report">
+                            <a href="conoce-del-proyecto.html">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/conoce-el-proyecto-slide.jpg" alt="">
+                                </div>
+                                <h3>Conoce el proyecto</h3>
+                            </a>
+                        </div>
+                        
                         <div class="container-item-menu-report">
                             <a href="cafe-aromatiza-procesos-paz.html">
                                 <div class="wrapper-img-menu-report">
@@ -71,7 +82,7 @@
                                 <div class="wrapper-img-menu-report">
                                     <img src="img/notacaucacover.jpg" alt="">
                                 </div>
-                                <h3>el posconflicto en el sur del tolima</h3>
+                                <h3>Nuevas criminalidades en el norte del cauca</h3>
                             </a>
                         </div>
                         <!--
@@ -118,8 +129,20 @@
                         -->
                     </div>
 
+                    <!-- mobile -->
                     <div class="themobileMenu">
                         <div class="mobileSlider">
+                            <!-- item -->
+                            <div class="item-mobileSlider">
+                                <a href="conoce-del-proyecto.html">
+                                    <div class="container-item-report d-flex align-items-center">
+                                        <div class="wrapper-img-report">
+                                            <img src="img/conoce-el-proyecto-slide.jpg" alt="">
+                                        </div>
+                                        <h3>Conoce el proyecto</h3>
+                                    </div>
+                                </a>
+                            </div>
                             <!-- item -->
                             <div class="item-mobileSlider">
                                 <a href="cafe-aromatiza-procesos-paz.html">
@@ -133,34 +156,12 @@
                             </div>
                             <!-- item -->
                             <div class="item-mobileSlider">
-                                <a href="cafe-aromatiza-procesos-paz.html">
+                                <a href="nota-cauca.html">
                                     <div class="container-item-report d-flex align-items-center">
                                         <div class="wrapper-img-report">
                                             <img src="img/img-post-1.png" alt="">
                                         </div>
-                                        <h3>Café aromatiza dos procesos de paz</h3>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- item -->
-                            <div class="item-mobileSlider">
-                                <a href="cafe-aromatiza-procesos-paz.html">
-                                    <div class="container-item-report d-flex align-items-center">
-                                        <div class="wrapper-img-report">
-                                            <img src="img/img-post-1.png" alt="">
-                                        </div>
-                                        <h3>Café aromatiza dos procesos de paz</h3>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- item -->
-                            <div class="item-mobileSlider">
-                                <a href="cafe-aromatiza-procesos-paz.html">
-                                    <div class="container-item-report d-flex align-items-center">
-                                        <div class="wrapper-img-report">
-                                            <img src="img/img-post-1.png" alt="">
-                                        </div>
-                                        <h3>Café aromatiza dos procesos de paz</h3>
+                                        <h3>Nuevas criminalidades en el norte del cauca</h3>
                                     </div>
                                 </a>
                             </div>
@@ -365,141 +366,152 @@
                 </div>
             </div>
         </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.hotspot.js"></script>
-    <script src="js/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.hotspot.js"></script>
+        <script src="js/main.js"></script>
 
-    <!-- scripts main page -->
-    <script type="text/javascript">
+        <!-- scripts main page -->
+        <script type="text/javascript">
 
-        _width = $(document).width();
+            _width = $(document).width();
 
-        if (_width > 1024) {
-            if ($('#hotspotImg').length > 0) {
-                $('#hotspotImg').hotSpot({
-                    // default selectors
-                    mainselector: '#hotspotImg',
-                    selector: '.hot-spot',
-                    imageselector: '.img-responsive',
-                    tooltipselector: '.tooltip',
-            
-                    // or 'click'
-                    bindselector: 'hover'
-                });
-            }
-        }
-
-        header = new Waypoint({
-            element: document.getElementById('waypointHeader'),
-            handler: function(direction) {
-                if (direction === 'down') {
-                    $(".headeR").addClass("activeH");
-                } else {
-                    $(".headeR").removeClass("activeH");
-                }
-            }
-        });
-
-        var sync1 = $('#sync1'),
-            sync2 = $('#sync2'),
-            duration = 300,
-            thumbs = 4;
-
-        sync1.on('click', '.owl-next', function () {
-            sync2.trigger('next.owl.carousel')
-        });
-        sync1.on('click', '.owl-prev', function () {
-            sync2.trigger('prev.owl.carousel')
-        });
-
-        // Start Carousel
-        sync1.owlCarousel({
-            // center : true,
-            loop: true,
-            items : 1,
-            margin:0,
-            nav : true,
-            navText : ["&lsaquo;","&rsaquo;"]
-        })
-        .on('dragged.owl.carousel', function (e) {
-                if (e.relatedTarget.state.direction == 'left') {
-                    sync2.trigger('next.owl.carousel')
-                } else {
-                    sync2.trigger('prev.owl.carousel')
-                }
-        });
-
-        flag = false;
-
-        sync2.owlCarousel({
-            // center: true,
-            loop: true,
-            items : thumbs,
-            margin:1,
-            nav : false,
-            navText : ["&lsaquo;","&rsaquo;"]
-        })
-        .on('click', '.owl-item', function() {
-            var i = $(this).index()-(thumbs);
-            sync2.trigger('to.owl.carousel', [i, duration, true]);
-            sync1.trigger('to.owl.carousel', [i, duration, true]);
-        })
-        .on('changed.owl.carousel', function (e) {
-            // console.log(e.item.index-thumbs);
-            if (!flag) {
-                flag = true;
-                sync1.trigger('to.owl.carousel', [e.item.index-thumbs, duration, true]);
-                flag = false;
-            }
-        });
-
-        $(".hamburger").on("click", function(){
-            $(this).toggleClass("is-active ");
-            $("body").toggleClass("bodyhide");
-            if ( $(this).hasClass("is-active") ) {
-                $(".white-background-items-menu").fadeIn();
+            if (_width > 1024) {
+                if ($('#hotspotImg').length > 0) {
+                    $('#hotspotImg').hotSpot({
+                        // default selectors
+                        mainselector: '#hotspotImg',
+                        selector: '.hot-spot',
+                        imageselector: '.img-responsive',
+                        tooltipselector: '.tooltip',
                 
-                if( _width > 767 ) {
-                    $(".items-menu").owlCarousel({
-                        centerMode          : false,
-                        dotsContainer 		: '.the-dots',
-                        smartSpeed          : 1000,
-                        margin              : 10,
-                        dots  	 		 	: true,
-                        loop 				: false,
-                        responsive : {
-                            0: {
-                                items: 1
-                            },
-                            768: {
-                                items: 2
-                            },
-                            991: {
-                                items: 3
-                            },
-                            1200: {
-                                items: 4
-                            }
-                        }
-                    });
-                } else {
-                    $('.mobileSlider').slick({
-                        infinite: true,
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        vertical: true
+                        // or 'click'
+                        bindselector: 'hover'
                     });
                 }
-            } else {
-                $(".white-background-items-menu").fadeOut();
             }
-        });
-    </script>
 
+            header = new Waypoint({
+                element: document.getElementById('waypointHeader'),
+                handler: function(direction) {
+                    if (direction === 'down') {
+                        $(".headeR").addClass("activeH");
+                        $(".headeR").removeClass("noway");
+                    } else {
+                        $(".headeR").removeClass("activeH");
+                        $(".headeR").addClass("noway");
+                    }
+                }
+            });
+
+            var sync1 = $('#sync1'),
+                sync2 = $('#sync2'),
+                duration = 300,
+                thumbs = 4;
+
+            sync1.on('click', '.owl-next', function () {
+                sync2.trigger('next.owl.carousel')
+            });
+            sync1.on('click', '.owl-prev', function () {
+                sync2.trigger('prev.owl.carousel')
+            });
+
+            // Start Carousel
+            sync1.owlCarousel({
+                // center : true,
+                loop: true,
+                items : 1,
+                margin:0,
+                nav : true,
+                navText : ["&lsaquo;","&rsaquo;"]
+            })
+            .on('dragged.owl.carousel', function (e) {
+                    if (e.relatedTarget.state.direction == 'left') {
+                        sync2.trigger('next.owl.carousel')
+                    } else {
+                        sync2.trigger('prev.owl.carousel')
+                    }
+            });
+
+            flag = false;
+
+            sync2.owlCarousel({
+                // center: true,
+                loop: true,
+                items : thumbs,
+                margin:1,
+                nav : false,
+                navText : ["&lsaquo;","&rsaquo;"]
+            })
+            .on('click', '.owl-item', function() {
+                var i = $(this).index()-(thumbs);
+                sync2.trigger('to.owl.carousel', [i, duration, true]);
+                sync1.trigger('to.owl.carousel', [i, duration, true]);
+            })
+            .on('changed.owl.carousel', function (e) {
+                // console.log(e.item.index-thumbs);
+                if (!flag) {
+                    flag = true;
+                    sync1.trigger('to.owl.carousel', [e.item.index-thumbs, duration, true]);
+                    flag = false;
+                }
+            });
+
+            $(".hamburger").on("click", function(){
+                $(this).toggleClass("is-active ");
+                $("body").toggleClass("bodyhide");
+                
+                
+                if( $('.headeR').hasClass('noway')) {
+                    console.log("tiene");
+                    $(".noway").toggleClass("activeH");
+                } else {
+                    console.log("no tiene");
+                    $(".noway").removeClass("activeH");
+                }
+
+                if ( $(this).hasClass("is-active") ) {
+                    $(".white-background-items-menu").fadeIn();
+                    
+                    if( _width > 767 ) {
+                        $(".items-menu").owlCarousel({
+                            centerMode          : false,
+                            dotsContainer 		: '.the-dots',
+                            smartSpeed          : 1000,
+                            margin              : 10,
+                            dots  	 		 	: true,
+                            loop 				: false,
+                            responsive : {
+                                0: {
+                                    items: 1
+                                },
+                                768: {
+                                    items: 2
+                                },
+                                991: {
+                                    items: 3
+                                },
+                                1200: {
+                                    items: 4
+                                }
+                            }
+                        });
+                    } else {
+                        $('.mobileSlider').slick({
+                            infinite: true,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            vertical: true
+                        });
+                    }
+                } else {
+                    $(".white-background-items-menu").fadeOut();
+                }
+            });
+        </script>
     </body>
 </html>
