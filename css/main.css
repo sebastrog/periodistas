@@ -1577,6 +1577,10 @@ a:hover {
         width: 100%;
         text-align: right;
     }
+    .frame.map-not-full {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
