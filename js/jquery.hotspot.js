@@ -8,7 +8,7 @@
 	$topspot = null;
 
 	if ( $theWidth > 300) {
-		$leftspot = 47;
+		$leftspot = 56;
 		$topspot = 5
 	}
 
