@@ -3,12 +3,38 @@
  *
  * Author: SK Lam
  */
+	$theWidth = $(window).width();
+	$leftspot = null;
+	$topspot = null;
+
+	if ( $theWidth > 300) {
+		$leftspot = 47;
+		$topspot = 5
+	}
+
+	if ( $theWidth > 500) {
+		$leftspot = 40;
+	}
+
+	if ( $theWidth > 700) {
+		$leftspot = 20;
+	}
+
+	if ( $theWidth > 991) {
+		$leftspot = 11;
+	}
+
+	if ( $theWidth > 1224) {
+		$leftspot = 0;
+	}
+
 (function() {
 	'use strict';
 
 	/*
 		Reposition the HotSpots during init and resize windows
-	*/
+	*/	
+
 	function _positionHotspots(options) {
 		var imageWidth = $(options.mainselector + ' ' + options.imageselector).prop('naturalWidth'); 
 		var imageHeight = $(options.mainselector + ' ' + options.imageselector).prop('naturalHeight');
@@ -22,8 +48,8 @@
 			yPos = yPos / imageHeight * bannerHeight;
 
 			$(this).css({
-				'top': yPos,
-				'left': xPos,
+				'top': yPos - $topspot,
+				'left': xPos - $leftspot,
 				'display': 'block',
 			});
 			$(this).children(options.tooltipselector).css({

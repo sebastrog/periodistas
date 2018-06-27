@@ -1663,7 +1663,7 @@ a:hover {
 
 @media (max-width: 576px) {
     section.container-home-main-banner{
-        height: 50vh;
+        /* height: 50vh; */
     }
     .wrapper-text-home {
         padding-top: 26px;

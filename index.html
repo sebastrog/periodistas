@@ -178,23 +178,27 @@
                 <iframe src="http://patrimoniomedellin.gov.co/prueba/" frameborder="0"></iframe>
             </div> -->
 
-            <img src="img/banner-header-colombia3.jpg" class="img-responsive" alt="" width="1920" height="700">
+            <img src="img/banner-header-colombia3.jpg" class="img-responsive" width="1920" height="700">
 
-            <div class="hot-spot" x="569" y="342">
+            <div class="hot-spot hot-spot-1" x="569" y="342">
                 <div class="circle"></div>
                 <div class="tooltip">
-                    <div class="img-row">
-                        <img src="img/Tarjeta-Tolima-Mapa2.png" alt="Tarjeta Tolima">
-                    </div>
+                    <a href="cafe-aromatiza-procesos-paz.html">
+                        <div class="img-row">
+                            <img src="img/Tarjeta-Tolima-Mapa2.png" alt="Tarjeta Tolima">
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            <div class="hot-spot" x="545" y="375">
+            <div class="hot-spot hot-spot-2" x="545" y="375">
                 <div class="circle"></div>
                 <div class="tooltip">
-                    <div class="img-row">
-                        <img src="img/Tarjeta-Cauca-mapa.png" alt="Tarjeta Cauca">
-                    </div>
+                    <a href="la-zozobra-sin-fin-indigenas-nasa.html">
+                        <div class="img-row">
+                            <img src="img/Tarjeta-Cauca-mapa.png" alt="Tarjeta Cauca">
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -208,7 +212,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="wrapper-text-home">
             <div class="container">
@@ -380,19 +383,20 @@
 
             _width = $(document).width();
 
-            if (_width > 1024) {
-                if ($('#hotspotImg').length > 0) {
-                    $('#hotspotImg').hotSpot({
-                        // default selectors
-                        mainselector: '#hotspotImg',
-                        selector: '.hot-spot',
-                        imageselector: '.img-responsive',
-                        tooltipselector: '.tooltip',
+            if ($('#hotspotImg').length > 0) {
+                $('#hotspotImg').hotSpot({
+                    // default selectors
+                    mainselector: '#hotspotImg',
+                    selector: '.hot-spot',
+                    imageselector: '.img-responsive',
+                    tooltipselector: '.tooltip',
 
-                        // or 'click'
-                        bindselector: 'hover'
-                    });
-                }
+                    // or 'click'
+                    bindselector: 'hover'
+                });
+            }
+            if (_width > 1280) {
+                
             }
 
             header = new Waypoint({
