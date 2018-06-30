@@ -377,10 +377,11 @@
 
         <!-- scripts main page -->
         <script type="text/javascript">
-
+        $(document).ready(function() {
             _width = $(document).width();
 
             if ($('#hotspotImg').length > 0) {
+                console.log("esto es");
                 $('#hotspotImg').hotSpot({
                     // default selectors
                     mainselector: '#hotspotImg',
@@ -410,9 +411,9 @@
             });
 
             var sync1 = $('#sync1'),
-                sync2 = $('#sync2'),
-                duration = 300,
-                thumbs = 4;
+            sync2 = $('#sync2'),
+            duration = 300,
+            thumbs = 4;
 
             sync1.on('click', '.owl-next', function () {
                 sync2.trigger('next.owl.carousel')
@@ -431,11 +432,11 @@
                 navText : ["&lsaquo;","&rsaquo;"]
             })
             .on('dragged.owl.carousel', function (e) {
-                    if (e.relatedTarget.state.direction == 'left') {
-                        sync2.trigger('next.owl.carousel')
-                    } else {
-                        sync2.trigger('prev.owl.carousel')
-                    }
+                if (e.relatedTarget.state.direction == 'left') {
+                    sync2.trigger('next.owl.carousel')
+                } else {
+                    sync2.trigger('prev.owl.carousel')
+                }
             });
 
             flag = false;
@@ -513,6 +514,7 @@
                     $(".white-background-items-menu").fadeOut();
                 }
             });
+        });
         </script>
     </body>
 </html>
