@@ -1369,6 +1369,35 @@ a:hover {
 }
 /* ARTÍCULO 2 */
 
+.hasOverlay {
+    z-index: 50;
+}
+
+.theTitle {
+    position: relative;
+}
+
+.overlayIf {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.isPhoto {
+    
+}
+
+.isPhoto img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

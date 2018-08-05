@@ -800,6 +800,37 @@ width: 160px;
     bottom: -15px;
 }
 
+.isPhoto img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+}
+
+.theText-bg-white {
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    margin: 25px 0;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.theText-bg-white.activeT {
+    opacity: 1;
+}
+
+.smallcontframe {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
 @media (max-width:1024px) {
     footer {
         text-align: center;
