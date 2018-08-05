@@ -51,7 +51,6 @@
 			var yPosMobile = $(this).attr('yPosMobile');
 
 			if( $theWidth > 580 ) {
-				console.log("es mayor");
 				xPos = xPos / imageWidth * bannerWidth;
 				yPos = yPos / imageHeight * bannerHeight;
 				$(this).css({
@@ -63,7 +62,6 @@
 				});
 				
 			} else {
-				console.log("es menor mayor");
 				xPosMobile = xPosMobile / imageWidth * bannerWidth;
 				yPosMobile = yPosMobile / imageHeight * bannerHeight;
 
