@@ -4,29 +4,29 @@
  * Author: SK Lam
  */
 	$theWidth = $(window).width();
-	$leftspot = null;
-	$topspot = null;
+	// $leftspot = null;
+	// $topspot = null;
 
-	if ( $theWidth > 300) {
-		$leftspot = 56;
-		$topspot = 5
-	}
+	// if ( $theWidth > 300) {
+	// 	$leftspot = 56;
+	// 	$topspot = 5
+	// }
 
-	if ( $theWidth > 500) {
-		$leftspot = 40;
-	}
+	// if ( $theWidth > 500) {
+	// 	$leftspot = 40;
+	// }
 
-	if ( $theWidth > 700) {
-		$leftspot = 20;
-	}
+	// if ( $theWidth > 700) {
+	// 	$leftspot = 20;
+	// }
 
-	if ( $theWidth > 991) {
-		$leftspot = 11;
-	}
+	// if ( $theWidth > 991) {
+	// 	$leftspot = 11;
+	// }
 
-	if ( $theWidth > 1224) {
-		$leftspot = 0;
-	}
+	// if ( $theWidth > 1224) {
+	// 	$leftspot = 0;
+	// }
 
 (function() {
 	'use strict';
@@ -41,17 +41,41 @@
 
 		var bannerWidth = $(options.mainselector).width();
 		var bannerHeight = $(options.mainselector).height();
-		$(options.selector).each(function() {
+		
+		$(options.selector).each(function(e) {
+
 			var xPos = $(this).attr('x');
 			var yPos = $(this).attr('y');
-			xPos = xPos / imageWidth * bannerWidth;
-			yPos = yPos / imageHeight * bannerHeight;
 
-			$(this).css({
-				'top': yPos - $topspot,
-				'left': xPos - $leftspot,
-				'display': 'block',
-			});
+			var xPosMobile = $(this).attr('xPosMobile');
+			var yPosMobile = $(this).attr('yPosMobile');
+
+			if( $theWidth > 580 ) {
+				console.log("es mayor");
+				xPos = xPos / imageWidth * bannerWidth;
+				yPos = yPos / imageHeight * bannerHeight;
+				$(this).css({
+					// 'top': yPos - $topspot,
+					// 'left': xPos - $leftspot,
+					'top': yPos,
+					'left': xPos,
+					'display': 'block',
+				});
+				
+			} else {
+				console.log("es menor mayor");
+				xPosMobile = xPosMobile / imageWidth * bannerWidth;
+				yPosMobile = yPosMobile / imageHeight * bannerHeight;
+
+				$(this).css({
+					// 'top': yPos - $topspot,
+					// 'left': xPos - $leftspot,
+					'top': yPosMobile,
+					'left': xPosMobile,
+					'display': 'block',
+				});
+			}		
+			
 			$(this).children(options.tooltipselector).css({
 				'margin-left': - ($(this).children(options.tooltipselector).width() / 2)
 			});

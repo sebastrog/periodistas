@@ -693,7 +693,7 @@ pulsate {  0% {
   border-radius: 100%;
   cursor: pointer;
   transition: all .3s ease;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 #hotspotImg .hot-spot .circle {
@@ -855,6 +855,10 @@ width: 160px;
     }
 }
 
+.spotmobile {
+    display: none !important;
+}
+
 @media (max-width: 767px) {
     .theTitle {
         padding-top: 70px;
@@ -924,6 +928,19 @@ width: 160px;
     }
     .staticImageMap {
         opacity: 0.3;
+    }
+
+    .hot-spot-1,
+    .hot-spot-2 {
+        /* display: none !important; */
+    }
+
+    .spotmobile {
+        /* display: block !important; */
+    }
+    #hotspotImg .hot-spot {
+        width: 20px;
+        height: 20px;
     }
 }
 
