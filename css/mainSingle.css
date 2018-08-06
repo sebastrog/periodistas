@@ -831,6 +831,10 @@ width: 160px;
     margin: 0 auto;
 }
 
+.smallText {
+    font-size: 24px !important;
+}
+
 @media (max-width:1024px) {
     footer {
         text-align: center;
@@ -857,6 +861,11 @@ width: 160px;
 
 .spotmobile {
     display: none !important;
+}
+
+.maphe {
+    height: 909px;
+    padding: 50px 0 0;
 }
 
 @media (max-width: 767px) {
@@ -941,6 +950,12 @@ width: 160px;
     #hotspotImg .hot-spot {
         width: 20px;
         height: 20px;
+    }
+    .theText-bg-white {
+        background-color: rgba(255,255,255,0.4);
+    }
+    .maphe {
+        height: auto;
     }
 }
 

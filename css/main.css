@@ -1708,7 +1708,8 @@ a:hover {
     }
     .container-item-report h3 {
         font-size: 18px;
-        height: 94px;
+        /* height: 94px; */
+        height: 124px;
     }
     .item-logo-footer {
         display: block;
