@@ -465,7 +465,7 @@
             </div>
         </div>
 
-        <div class="section page sec4">
+        <div id="carousel-container" class="section page sec4">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -616,6 +616,17 @@
             </div>
         </div>
 
+
+        <div class="container-credits-photography">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p><strong>Fotografías:</strong> María Flórez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section page sec5">
             <footer class="nottopfoter">
                 <div class="container">
@@ -707,7 +718,7 @@
 
 
                 // NOTE: editado
-                var mapximg = new Waypoint({
+                var birdImage = new Waypoint({
                     element: document.getElementById('embem-charts-1'),
                     handler: function(direction) {
                         if ( direction === 'down' ) {
@@ -723,7 +734,7 @@
                 });
 
                 // NOTE: Editado
-                var mapx = new Waypoint({
+                var birdText = new Waypoint({
                     element: document.getElementById('embem-charts-1'),
                     handler: function(direction) {
                         console.log(direction);
@@ -737,7 +748,7 @@
 
 
                 // NOTE: Editado
-                sentinel = new Waypoint({
+                horseManImage = new Waypoint({
                     element: document.getElementById('sentinel-image'),
                     handler: function(direction) {
                         if ( direction === 'down' ) {
@@ -753,7 +764,7 @@
                 });
 
                 // NOTE: Editado
-                var sentinelText = new Waypoint({
+                horseManText = new Waypoint({
                     element: document.getElementById('sentinel-image'),
                     handler: function(direction) {
                         console.log(direction);
@@ -766,7 +777,7 @@
                 });
 
                 // NOTE: editado
-                var embed2 = new Waypoint({
+                var dogHorsesImage = new Waypoint({
                     element: document.getElementById('embed-charts-2'),
                     handler: function(direction) {
                         if ( direction === 'down' ) {
@@ -781,7 +792,7 @@
                     offset: 'bottom-in-view'
                 });
                 // NOTE: Editado
-                var mapx = new Waypoint({
+                var dogHorsesText = new Waypoint({
                     element: document.getElementById('embed-charts-2'),
                     handler: function(direction) {
                         console.log(direction);
@@ -793,36 +804,119 @@
                     offset: '-75%'
                 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                // NOTE: Editado
-                var textembed2 = new Waypoint({
-                    element: document.getElementById('embem-charts-2'),
+                dogMrsImage = new Waypoint({
+                    element: document.getElementById('idmap4'),
                     handler: function(direction) {
-                        console.log(direction);
-                        if ( direction === "down" ) {
-                            $("#idmap4").find(".theText-bg-white").addClass("activeT");
-                            console.log('acá debería aparecer el texto');
+                        if (direction === 'down') {
+                            $(".showmap5").fadeIn();
+                            console.log('IMAGEN SEÑORA PERRO');
                         }
-                    },
-                    offset: '-95%'
+                    }, offset: 'bottom-in-view'
                 });
 
+                dogMrsText = new Waypoint({
+                    element: document.getElementById('idmap4'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $("#idmap5").find(".theText-bg-white").addClass("activeT");
+                            console.log('TEXTO SEÑORA PERRO');
+                        }
+                    }, offset: function() {
+                        return -this.element.clientHeight + 150;
+                    }
+                });
 
+                cowsImageDown = new Waypoint({
+                    element: document.getElementById('idmap5'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $(".showmap6").fadeIn();
+                            console.log('IMAGEN vacas');
+                        }
+                    }, offset: 'bottom-in-view'
+                });
 
+                cowsImageUp = new Waypoint({
+                    element: document.getElementById('idmap6'),
+                    handler: function(direction) {
+                        if (direction === 'up') {
+                            $(".showmap7").fadeOut('fast');
+                            $(".showmap6").fadeIn();
+                            console.log('café HACIA ARRIBA');
+                        }
+                    },
+                    offset: '7%'
+                });
+                
+
+                cowsText = new Waypoint({
+                    element: document.getElementById('idmap5'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $("#idmap6").find(".theText-bg-white").addClass("activeT");
+                            console.log('TEXTO VACAS');
+                        }
+                    }, offset: function() {
+                        return -this.element.clientHeight + 150;
+                    }
+                });
+
+                coffeeImage = new Waypoint({
+                    element: document.getElementById('idmap6'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $(".showmap7").fadeIn();
+                            console.log('IMAGEN café');
+                        }
+                    }, offset: 'bottom-in-view'
+                });
+
+                coffeeText = new Waypoint({
+                    element: document.getElementById('idmap6'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $("#idmap7").find(".theText-bg-white").addClass("activeT");
+                            console.log('TEXTO CAFÉ');
+                        }
+                    }, offset: function() {
+                        return -this.element.clientHeight + 150;
+                    }
+                });
+
+                var bridgeImageDown = new Waypoint({
+                    element: document.getElementById('carousel-container'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $(".showmap8").fadeIn();
+                            console.log('IMAGEN HOMBRE PUENTE');
+                        }
+                    },
+                    offset: 'bottom-in-view'
+                });
+
+                var bridgeImageUp = new Waypoint({
+                    element: document.getElementById('carousel-container'),
+                    handler: function(direction) {
+                        if (direction === 'up') {
+                            $(".showmap8").fadeOut('fast');
+                            $(".showmap7").fadeIn();
+                            console.log('CARRUSEL HACIA ARRIBA');
+                        }
+                    },
+                    offset: '7%'
+                });
+
+                bridgeText = new Waypoint({
+                    element: document.getElementById('carousel-container'),
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $("#idmap8").find(".theText-bg-white").addClass("activeT");
+                            console.log('TEXTO hombre puente');
+                        }
+                    }, offset: function() {
+                        return -this.element.clientHeight + 150;
+                    }
+                });
 
 
 

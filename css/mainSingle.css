@@ -952,3 +952,15 @@ width: 160px;
 #idmap2 {
     /* background-color: red; */
 }
+.container-credits-photography {
+    background-color: white;
+    padding: 40px 0;
+}
+.container-credits-photography p{
+    font-family: Aleo Light;
+    font-style: italic;
+}
+.container-credits-photography strong {
+    font-family: Aleo Bold;
+    font-style: italic;
+}
