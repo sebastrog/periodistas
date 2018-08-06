@@ -755,9 +755,6 @@
                             $(".showmap1").fadeOut('fast');
                             $(".showmap3").fadeIn();
                             console.log("acá debería desaparecer la imagen del pájaro y aparecer la imagen del hombre con caballo");
-                        } else {
-                            $(".showmap2").fadeOut('fast');
-                            $(".showmap1").fadeIn();
                         }
                     },
                     offset: 'bottom-in-view'
@@ -776,6 +773,19 @@
                     offset: '-120%'
                 });
 
+                // NOTE: Editado
+                horseManText = new Waypoint({
+                    element: document.getElementById('sentinel-image'),
+                    handler: function(direction) {
+                        console.log(direction);
+                        if ( direction === "up" ) {
+                            $(".showmap3").fadeOut('fast');
+                            $(".showmap2").fadeIn();
+                        }
+                    },
+                    offset: '0%'
+                });
+
                 // NOTE: editado
                 var dogHorsesImage = new Waypoint({
                     element: document.getElementById('embed-charts-2'),
@@ -791,6 +801,21 @@
                     },
                     offset: 'bottom-in-view'
                 });
+
+                var embedCharts2Up = new Waypoint({
+                    element: document.getElementById('embed-charts-2'),
+                    handler: function(direction) {
+                        if (direction === 'up') {
+                            $(".showmap4").fadeOut('fast');
+                            $(".showmap3").fadeIn();
+                            // $(".showmap8").fadeOut('fast');
+                            // $(".showmap7").fadeIn();
+                            console.log('CARRUSEL HACIA ARRIBA');
+                        }
+                    },
+                    offset: '0%'
+                });
+
                 // NOTE: Editado
                 var dogHorsesText = new Waypoint({
                     element: document.getElementById('embed-charts-2'),
@@ -810,6 +835,10 @@
                         if (direction === 'down') {
                             $(".showmap5").fadeIn();
                             console.log('IMAGEN SEÑORA PERRO');
+                        } else {
+                            $(".showmap5").fadeOut();
+                            $(".showmap4").fadeIn();
+
                         }
                     }, offset: 'bottom-in-view'
                 });
@@ -832,6 +861,10 @@
                         if (direction === 'down') {
                             $(".showmap6").fadeIn();
                             console.log('IMAGEN vacas');
+                        } else {
+                            $(".showmap6").fadeOut('fast');
+                            $(".showmap5").fadeIn();
+
                         }
                     }, offset: 'bottom-in-view'
                 });
@@ -847,7 +880,7 @@
                     },
                     offset: '7%'
                 });
-                
+
 
                 cowsText = new Waypoint({
                     element: document.getElementById('idmap5'),
@@ -867,6 +900,10 @@
                         if (direction === 'down') {
                             $(".showmap7").fadeIn();
                             console.log('IMAGEN café');
+                        } else {
+                            $(".showmap7").fadeOut('fast');
+                            $(".showmap6").fadeIn();
+                            console.log("acá aparecen las vacas otra vez");
                         }
                     }, offset: 'bottom-in-view'
                 });
