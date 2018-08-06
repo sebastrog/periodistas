@@ -232,7 +232,14 @@
     </div>
 
     <div id="">
-        <div id="element" class="section page sec1" style="background-image: url(img/cover_macarena.jpg); background-size: cover;">
+        <div id="element" class="section page sec1" style="background-image: url(img/cover_macarena.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        height: calc(100vh - 68px);
+        top: 68px;
+        position: relative;
+        margin-bottom: 68px;">
             <div class="theTitle hasOverlay">
                 <h1>La selva, víctima inesperada del posconflicto en La Macarena</h1>
             </div>
@@ -262,7 +269,7 @@
         </div>
 
         <!-- embed map -->
-        <div class="section page sec5" style="padding: 50px 0;">
+        <div id="embem-charts-1" class="section page sec5" style="    height: 909px;padding: 50px 0 0;">
             <div class="frame map-not-full">
                 <div class="container">
                     <div class="row">
@@ -282,8 +289,6 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="theText theText-bg-white">
-                            <h4>Beneficios múltiples</h4>
-
                             <div id="quote1">
                                 <p>Francisco Parra, coordinador de la regional del municipio La Macarena de la Corporación para el Desarrollo Sostenible del Área de Manejo Especial la Macarena (Cormacarena), le contó a este portal que las actividades ilegales de deforestación empezaron en octubre de 2017, tres meses antes de la época de verano, cuando decenas de personas empezaron a limpiar el terreno dentro del Parque. En enero de este año se llevaron a cabo las quemas del material vegetal muerto y, luego, la tala masiva, que se extendió hasta marzo. Aunque la dinámica se repite cada año, la de este último alertó a las autoridades por el tamaño del área deforestada. </p>
                             </div>
@@ -305,12 +310,20 @@
             </div>
         </div>
 
-        <div class="section mapImage">
+        <div id="sentinel-image" class="section mapImage">
             <div class="backm1" style="background-color: #ffffff;"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <img src="img/imageMapje.jpg" alt="">
+                    </div>
+                    <div class="col-10 offset-md-1">
+                        <p style="color: #3d3c3c;
+                            font-family: Aleo Light;
+                            font-size: 23px;
+                            font-weight: 100;
+                            margin-top: 50px;">Esta oleada de deforestación, según las fuentes consultadas, obedece a la desaparición de los estrictos controles ambientales que ejercían las Farc en La Macarena. Regula- ciones que no han podido ser asumidas por el Estado, sobre el que pesa una profunda desconfianza en la zona.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -344,7 +357,7 @@
         </div>
 
         <!-- embed map -->
-        <div class="section page sec5" style="padding: 50px 0;">
+        <div id="embed-charts-2" class="section page sec5" style="padding: 50px 0 0;height: 784px;">
             <div class="frame map-not-full">
                 <div class="container">
                     <div class="row">
@@ -674,176 +687,310 @@
 
         $(document).ready(function() {
             // waypoint
+
+                // NOTE: editado
                 map1 = new Waypoint({
                     element: document.getElementById('idmap1'),
                     handler: function(direction) {
                         if (direction === 'down') {
+                            console.log("entré acá");
                             $(".showmap1").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap2").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
-
+                            // setTimeout(function(){
+                            //     $("#idmap2").find(".theText-bg-white").addClass("activeT");
+                            // }, 1000);
                         } else {
+                            console.log("fadeout map1");
                             $(".showmap1").fadeOut('fast');
                         }
-                    }, offset: '-10%'
+                    }, offset: '70%'
                 });
-                map2 = new Waypoint({
-                    element: document.getElementById('idmap2'),
+
+
+                // NOTE: editado
+                var mapximg = new Waypoint({
+                    element: document.getElementById('embem-charts-1'),
                     handler: function(direction) {
-                        if (direction === 'down') {
+                        if ( direction === 'down' ) {
                             $(".showmap1").fadeOut('fast');
                             $(".showmap2").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap3").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
+                            console.log("acá debería desaparecer la imagen del mapa y aparecer la imagen del pájaro");
                         } else {
+                            $(".showmap2").fadeOut('fast');
                             $(".showmap1").fadeIn();
-                            $(".showmap2").fadeOut('fast');
                         }
-                    }, offset: '-10%'
+                    },
+                    offset: 'bottom-in-view'
                 });
-                map3 = new Waypoint({
-                    element: document.getElementById('idmap3'),
+
+                // NOTE: Editado
+                var mapx = new Waypoint({
+                    element: document.getElementById('embem-charts-1'),
                     handler: function(direction) {
-                        if (direction === 'down') {
+                        console.log(direction);
+                        if ( direction === "down" ) {
+                            $("#idmap2").find(".theText-bg-white").addClass("activeT");
+                            console.log('acá debería aparecer el texto DEL PÁJARO');
+                        }
+                    },
+                    offset: '-95%'
+                });
+
+
+                // NOTE: Editado
+                sentinel = new Waypoint({
+                    element: document.getElementById('sentinel-image'),
+                    handler: function(direction) {
+                        if ( direction === 'down' ) {
                             $(".showmap1").fadeOut('fast');
-                            $(".showmap2").fadeOut('fast');
                             $(".showmap3").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap3").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
+                            console.log("acá debería desaparecer la imagen del pájaro y aparecer la imagen del hombre con caballo");
                         } else {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap2").fadeIn();
+                            $(".showmap2").fadeOut('fast');
+                            $(".showmap1").fadeIn();
                         }
-                    }, offset: '-10%'
+                    },
+                    offset: 'bottom-in-view'
                 });
 
-                map4 = new Waypoint({
-                    element: document.getElementById('idmap4'),
+                // NOTE: Editado
+                var sentinelText = new Waypoint({
+                    element: document.getElementById('sentinel-image'),
                     handler: function(direction) {
-                        if (direction === 'down') {
+                        console.log(direction);
+                        if ( direction === "down" ) {
+                            $("#idmap3").find(".theText-bg-white").addClass("activeT");
+                            console.log('texto CABALLO RÍO');
+                        }
+                    },
+                    offset: '-120%'
+                });
+
+                // NOTE: editado
+                var embed2 = new Waypoint({
+                    element: document.getElementById('embed-charts-2'),
+                    handler: function(direction) {
+                        if ( direction === 'down' ) {
                             $(".showmap1").fadeOut('fast');
-                            $(".showmap2").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
                             $(".showmap4").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap4").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
+                            console.log("acá debería desaparecer la imagen de caballo en río y aparecer la imagen de hombres montando caballo");
                         } else {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap3").fadeIn();
+                            // $(".showmap2").fadeOut('fast');
+                            // $(".showmap1").fadeIn();
                         }
-                    }, offset: '-10%'
+                    },
+                    offset: 'bottom-in-view'
                 });
-
-                map5 = new Waypoint({
-                    element: document.getElementById('idmap5'),
+                // NOTE: Editado
+                var mapx = new Waypoint({
+                    element: document.getElementById('embed-charts-2'),
                     handler: function(direction) {
-                        if (direction === 'down') {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap2").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap5").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
-                        } else {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeOut('fast');
-                            $(".showmap4").fadeIn();
+                        console.log(direction);
+                        if ( direction === "down" ) {
+                            $("#idmap4").find(".theText-bg-white").addClass("activeT");
+                            console.log('texto DEL HOMBRES CABALLO PERRITOS');
                         }
-                    }, offset: '-10%'
+                    },
+                    offset: '-75%'
                 });
 
-                map6 = new Waypoint({
-                    element: document.getElementById('idmap6'),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // NOTE: Editado
+                var textembed2 = new Waypoint({
+                    element: document.getElementById('embem-charts-2'),
                     handler: function(direction) {
-                        if (direction === 'down') {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap2").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeOut('fast');
-                            $(".showmap6").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap6").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
-                        } else {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap6").fadeOut('fast');
-                            $(".showmap5").fadeIn();
+                        console.log(direction);
+                        if ( direction === "down" ) {
+                            $("#idmap4").find(".theText-bg-white").addClass("activeT");
+                            console.log('acá debería aparecer el texto');
                         }
-                    }, offset: '-10%'
-                });
-                map7 = new Waypoint({
-                    element: document.getElementById('idmap7'),
-                    handler: function(direction) {
-                        if (direction === 'down') {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap2").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeOut('fast');
-                            $(".showmap6").fadeOut('fast');
-                            $(".showmap7").fadeIn();
-
-                            setTimeout(function(){
-                                $("#idmap7").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
-                        } else {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeOut('fast');
-                            $(".showmap7").fadeOut('fast');
-                            $(".showmap6").fadeIn();
-                        }
-                    }, offset: '-10%'
+                    },
+                    offset: '-95%'
                 });
 
-                map8 = new Waypoint({
-                    element: document.getElementById('idmap8'),
-                    handler: function(direction) {
-                        if (direction === 'down') {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap2").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeOut('fast');
-                            $(".showmap6").fadeOut('fast');
-                            $(".showmap7").fadeOut('fast');
-                            $(".showmap8").fadeIn();
 
-                            setTimeout(function(){
-                                $("#idmap8").find(".theText-bg-white").addClass("activeT");
-                            }, 1000);
-                        } else {
-                            $(".showmap1").fadeOut('fast');
-                            $(".showmap3").fadeOut('fast');
-                            $(".showmap4").fadeOut('fast');
-                            $(".showmap5").fadeOut('fast');
-                            $(".showmap6").fadeOut('fast');
-                            $(".showmap8").fadeOut('fast');
-                            $(".showmap7").fadeIn();
-                        }
-                    }, offset: '-10%'
-                });
+
+
+
+
+
+
+
+
+
+
+
+                //
+                //
+                // map2 = new Waypoint({
+                //     element: document.getElementById('idmap2'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeIn();
+                //             // console.log("jajajajajajaja");
+                //             // setTimeout(function(){
+                //             //     $("#idmap3").find(".theText-bg-white").addClass("activeT");
+                //             // }, 1000);
+                //         } else {
+                //             // console.log("es por esta razón");
+                //             // $(".showmap1").fadeIn();
+                //             // $(".showmap2").fadeOut('fast');
+                //         }
+                //     }, offset: '-10%'
+                // });
+                // map3 = new Waypoint({
+                //     element: document.getElementById('idmap3'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeOut('fast');
+                //             $(".showmap3").fadeIn();
+                //
+                //             // setTimeout(function(){
+                //             //     $("#idmap3").find(".theText-bg-white").addClass("activeT");
+                //             // }, 1000);
+                //         } else {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap2").fadeIn();
+                //         }
+                //     }, offset: '-10%'
+                // });
+                //
+                // map4 = new Waypoint({
+                //     element: document.getElementById('idmap4'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeIn();
+                //
+                //             setTimeout(function(){
+                //                 $("#idmap4").find(".theText-bg-white").addClass("activeT");
+                //             }, 1000);
+                //         } else {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap3").fadeIn();
+                //         }
+                //     }, offset: '-10%'
+                // });
+                //
+                // map5 = new Waypoint({
+                //     element: document.getElementById('idmap5'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeIn();
+                //
+                //             setTimeout(function(){
+                //                 $("#idmap5").find(".theText-bg-white").addClass("activeT");
+                //             }, 1000);
+                //         } else {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeOut('fast');
+                //             $(".showmap4").fadeIn();
+                //         }
+                //     }, offset: '-10%'
+                // });
+                //
+                // map6 = new Waypoint({
+                //     element: document.getElementById('idmap6'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeOut('fast');
+                //             $(".showmap6").fadeIn();
+                //
+                //             setTimeout(function(){
+                //                 $("#idmap6").find(".theText-bg-white").addClass("activeT");
+                //             }, 1000);
+                //         } else {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap6").fadeOut('fast');
+                //             $(".showmap5").fadeIn();
+                //         }
+                //     }, offset: '-10%'
+                // });
+                // map7 = new Waypoint({
+                //     element: document.getElementById('idmap7'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeOut('fast');
+                //             $(".showmap6").fadeOut('fast');
+                //             $(".showmap7").fadeIn();
+                //
+                //             setTimeout(function(){
+                //                 $("#idmap7").find(".theText-bg-white").addClass("activeT");
+                //             }, 1000);
+                //         } else {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeOut('fast');
+                //             $(".showmap7").fadeOut('fast');
+                //             $(".showmap6").fadeIn();
+                //         }
+                //     }, offset: '-10%'
+                // });
+                //
+                // map8 = new Waypoint({
+                //     element: document.getElementById('idmap8'),
+                //     handler: function(direction) {
+                //         if (direction === 'down') {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap2").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeOut('fast');
+                //             $(".showmap6").fadeOut('fast');
+                //             $(".showmap7").fadeOut('fast');
+                //             $(".showmap8").fadeIn();
+                //
+                //             setTimeout(function(){
+                //                 $("#idmap8").find(".theText-bg-white").addClass("activeT");
+                //             }, 1000);
+                //         } else {
+                //             $(".showmap1").fadeOut('fast');
+                //             $(".showmap3").fadeOut('fast');
+                //             $(".showmap4").fadeOut('fast');
+                //             $(".showmap5").fadeOut('fast');
+                //             $(".showmap6").fadeOut('fast');
+                //             $(".showmap8").fadeOut('fast');
+                //             $(".showmap7").fadeIn();
+                //         }
+                //     }, offset: '-10%'
+                // });
 
                 quote1 = new Waypoint({
                     element: document.getElementById('quote1'),
