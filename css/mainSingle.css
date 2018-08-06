@@ -938,6 +938,9 @@ width: 160px;
     .staticImageMap {
         opacity: 0.3;
     }
+    .isPhoto {
+        opacity: 1 !important;
+    }
 
     .hot-spot-1,
     .hot-spot-2 {
