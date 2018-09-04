@@ -1243,7 +1243,7 @@ section.container-menu-top {
 }
 .container-item-menu-report h3 {
     font-family: Aleo Bold;
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
     color: #2a2a2a;
     width: 80%;
@@ -1387,7 +1387,7 @@ a:hover {
 }
 
 .isPhoto {
-    
+
 }
 
 .isPhoto img {
