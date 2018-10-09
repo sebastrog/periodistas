@@ -937,6 +937,16 @@ width: 160px;
     margin-top: 30px;
 }
 
+.quotephotobgwhite {
+    background-color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.ifram100 iframe {
+    width: 100%;
+}
+
 @media (max-width:1024px) {
     footer {
         text-align: center;
