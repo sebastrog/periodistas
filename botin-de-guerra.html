@@ -220,9 +220,7 @@
 
         <div class="" id="waypointHeader"></div>
 
-    <div class="staticImageMap showmap1">
-        <img src="img/mapa-single-cordoba.png">
-    </div>
+
     <div class="staticImageMap isPhoto showmap2">
         <img src="img/Chiva.jpg">
     </div>
@@ -493,32 +491,14 @@
             // waypoint
 
                 // NOTE: editado
-                map1 = new Waypoint({
-                    element: document.getElementById('idmap1'),
-                    handler: function(direction) {
-                        if (direction === 'down') {
-                            console.log("entré acá");
-                            $(".showmap1").fadeIn();
-
-                        } else {
-                            console.log("fadeout map1");
-                            $(".showmap1").fadeOut('fast');
-                        }
-                    }, offset: '70%'
-                });
-
-
-                // NOTE: editado
                 var birdImage = new Waypoint({
                     element: document.getElementById('idmap1'),
                     handler: function(direction) {
                         if ( direction === 'down' ) {
-                            $(".showmap1").fadeOut('fast');
                             $(".showmap2").fadeIn();
                             console.log("acá debería desaparecer la imagen del mapa y aparecer la imagen cover-cordoba-2");
                         } else {
                             $(".showmap2").fadeOut('fast');
-                            $(".showmap1").fadeIn();
                         }
                     },
                     offset: 'bottom-in-view'
