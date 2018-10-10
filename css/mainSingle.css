@@ -946,6 +946,35 @@ width: 160px;
 .ifram100 iframe {
     width: 100%;
 }
+.thisisayoutubevideo { 
+    position: relative;
+    padding-bottom: 35%;
+    height: 0;
+    overflow: hidden;
+    width: 800px;
+    margin: 30px auto 10px;
+} 
+.thisisayoutubevideo iframe, 
+.thisisayoutubevideo object, 
+.thisisayoutubevideo embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.sliderHeight .sync2-item {
+    height: 70px;
+    overflow: hidden;
+}
+
+.titleVideo {
+    text-align: center;
+    font-size: 17px;
+    margin: 25px 0 20px;
+    font-weight: 700;
+}
 
 @media (max-width:1024px) {
     footer {
@@ -968,6 +997,20 @@ width: 160px;
         width: 380px;
         height: 150px;
         background-size: 380px 150px;
+    }
+
+    .thisisayoutubevideo { 
+        position: relative;
+        padding-bottom: 35%;
+        height: 0;
+        overflow: hidden;
+        width: 800px;
+        margin: 30px auto 10px;
+    } 
+    
+    .thisisayoutubevideo {
+        padding-bottom: 60%;
+        width: 100%;
     }
 }
 
