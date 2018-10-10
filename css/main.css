@@ -1474,6 +1474,7 @@ span.credits-landing {
     width: 100%;
 }
 .content-link-story p {
+    color: #212529;
     font-size: 36px;
     font-family: Aleo Regular;
     line-height: 1.2;
@@ -1482,7 +1483,7 @@ span.credits-landing {
     vertical-align: middle;
     margin: 0 auto;
 }
-.content-link-story a {
+.content-link-story span {
     border: 2px solid white;
     display: block;
     padding: 5px 10px;
