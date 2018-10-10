@@ -112,6 +112,14 @@
                                 <h3>En una década, 48 indígenas asesinados y un silencio asustador</h3>
                             </a>
                         </div>
+                        <div class="container-item-menu-report">
+                            <a href="landing-antioquia.html">
+                                <div class="wrapper-img-menu-report">
+                                    <img src="img/menu-landing.jpg" alt="">
+                                </div>
+                                <h3>La mala hora de Ituango</h3>
+                            </a>
+                        </div>
                         <!--
                         <div class="container-item-menu-report">
                             <a href="#">
@@ -212,6 +220,16 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="item-mobileSlider">
+                                <a href="landing-antioquia.html">
+                                    <div class="container-item-report d-flex align-items-center">
+                                        <div class="wrapper-img-report">
+                                            <img src="img/menu-landing.jpg" alt="">
+                                        </div>
+                                        <h3>La mala hora de Ituango</h3>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,18 +297,18 @@
 
         _width = $(document).width();
 
-        header = new Waypoint({
-            element: document.getElementById('waypointHeader'),
-            handler: function(direction) {
-                if (direction === 'down') {
-                    $(".headeR").addClass("activeH");
-                    // $(".headeR").removeClass("noway");
-                } else {
-                    // $(".headeR").removeClass("activeH");
-                    // $(".headeR").addClass("noway");
-                }
-            }
-        });
+        // header = new Waypoint({
+        //     element: document.getElementById('waypointHeader'),
+        //     handler: function(direction) {
+        //         if (direction === 'down') {
+        //             $(".headeR").addClass("activeH");
+        //             // $(".headeR").removeClass("noway");
+        //         } else {
+        //             // $(".headeR").removeClass("activeH");
+        //             // $(".headeR").addClass("noway");
+        //         }
+        //     }
+        // });
 
         $(document).ready(function() {
             $(".js-iconDown").on("click", function(e){
