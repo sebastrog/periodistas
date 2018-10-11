@@ -1027,8 +1027,18 @@ width: 160px;
 }
 
 .coverlanding .wrapper-landing {
-    padding: 150px 0;
+    padding: 70px 0 150px;
     margin-top: 0;
+}
+
+.coverlanding .wrapper-top-landing p {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.coverlanding .wrapper-top-landing {
+    padding-top: 0;
 }
 
 @media (max-width: 767px) {
