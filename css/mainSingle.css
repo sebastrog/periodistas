@@ -1041,6 +1041,19 @@ width: 160px;
     padding-top: 0;
 }
 
+.blockQuotes {
+    height: auto;
+    background-color: #fff;
+    border: 6px solid black;
+    background-image: none;
+}
+.blockQuotes:before {
+    display: none;
+}
+.blockQuotes:after {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .theTitle {
         padding-top: 70px;
