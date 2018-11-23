@@ -1606,6 +1606,9 @@ button.slick-next.slick-arrow {
     .lineatiempo-numero .timeline-content-item .timeline-content-item-reveal a img  {
         max-width: 100%;
     }
+    .frameMapgraphic iframe {
+        height: 380px;
+    }
 
 #idmap2 {
     /* background-color: red; */

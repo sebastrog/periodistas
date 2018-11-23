@@ -1,7 +1,8 @@
-<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="caquetafamilias.com" resolutions="1x" timestamp="1542478616017">
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="erradicacion.com" resolutions="1x" timestamp="1542996143975">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4194546979" ref="index"/>
+    <file name="index.css" crc="3926549118" ref="index"/>
+    <file name="nomq_index.css" crc="4036555022" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -14,43 +15,44 @@
     <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
     <file name="touchswipe.js" crc="4075097462" ref="index"/>
     <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index"/>
     <file name="require.js" crc="7928878" ref="index"/>
   </folder>
   <folder name="images">
     <file name="1caqueta.svg" crc="4006452598" ref="index"/>
     <file name="1caqueta_poster_u2550.png" crc="387368582" ref="index"/>
     <file name="1solanodato.svg" crc="490657415" ref="index"/>
-    <file name="1solanodato_poster_u2856.png" crc="359143320" ref="index"/>
+    <file name="1solanodato_poster_u6771.png" crc="359143320" ref="index"/>
     <file name="1cartagenadato.svg" crc="4285623071" ref="index"/>
-    <file name="1cartagenadato_poster_u2872.png" crc="3806642584" ref="index"/>
+    <file name="1cartagenadato_poster_u6763.png" crc="3806642584" ref="index"/>
     <file name="1sanvicentedato.svg" crc="97493465" ref="index"/>
-    <file name="1sanvicentedato_poster_u2864.png" crc="239812763" ref="index"/>
+    <file name="1sanvicentedato_poster_u6755.png" crc="239812763" ref="index"/>
     <file name="1puertoricodato.svg" crc="90437410" ref="index"/>
-    <file name="1puertoricodato_poster_u2888.png" crc="3914055835" ref="index"/>
+    <file name="1puertoricodato_poster_u6747.png" crc="3914055835" ref="index"/>
     <file name="1eldoncellodato.svg" crc="4116431508" ref="index"/>
-    <file name="1eldoncellodato_poster_u2896.png" crc="93824566" ref="index"/>
-    <file name="1florencia2018.svg" crc="4146491593" ref="index"/>
-    <file name="1florencia2018_poster_u3030.png" crc="4281696829" ref="index"/>
+    <file name="1eldoncellodato_poster_u6739.png" crc="93824566" ref="index"/>
+    <file name="1florencia sin registro.svg" crc="4190019313" ref="index"/>
+    <file name="1florencia sin registro_poster_u6595.png" crc="226237820" ref="index"/>
     <file name="1montanitadato.svg" crc="421918935" ref="index"/>
-    <file name="1montanitadato_poster_u2912.png" crc="4214198502" ref="index"/>
+    <file name="1montanitadato_poster_u6731.png" crc="4214198502" ref="index"/>
     <file name="1elpaujildato.svg" crc="3873130479" ref="index"/>
-    <file name="1elpaujildato_poster_u2904.png" crc="4084784026" ref="index"/>
+    <file name="1elpaujildato_poster_u6723.png" crc="4084784026" ref="index"/>
     <file name="1milandato.svg" crc="4204206247" ref="index"/>
-    <file name="1milandato_poster_u2920.png" crc="483756336" ref="index"/>
+    <file name="1milandato_poster_u6715.png" crc="483756336" ref="index"/>
     <file name="1valparaisodato.svg" crc="68987939" ref="index"/>
-    <file name="1valparaisodato_poster_u2928.png" crc="333203131" ref="index"/>
+    <file name="1valparaisodato_poster_u6707.png" crc="333203131" ref="index"/>
     <file name="1sanjosedato.svg" crc="160057415" ref="index"/>
-    <file name="1sanjosedato_poster_u2880.png" crc="3851197521" ref="index"/>
+    <file name="1sanjosedato_poster_u6699.png" crc="3851197521" ref="index"/>
     <file name="1curillodato.svg" crc="4290270114" ref="index"/>
-    <file name="1curillodato_poster_u2944.png" crc="4171921005" ref="index"/>
+    <file name="1curillodato_poster_u6691.png" crc="4171921005" ref="index"/>
     <file name="1belendato.svg" crc="4124582764" ref="index"/>
-    <file name="1belendato_poster_u2960.png" crc="121421553" ref="index"/>
+    <file name="1belendato_poster_u6683.png" crc="121421553" ref="index"/>
     <file name="1albaniadato.svg" crc="68011216" ref="index"/>
-    <file name="1albaniadato_poster_u2952.png" crc="3772394092" ref="index"/>
-    <file name="1morelia2018.svg" crc="282196575" ref="index"/>
-    <file name="1morelia2018_poster_u3038.png" crc="261204136" ref="index"/>
+    <file name="1albaniadato_poster_u6675.png" crc="3772394092" ref="index"/>
+    <file name="1morelia sin registro.svg" crc="4150215857" ref="index"/>
+    <file name="1morelia sin registro_poster_u6571.png" crc="67140647" ref="index"/>
     <file name="1solitadato.svg" crc="433626619" ref="index"/>
-    <file name="1solitadato_poster_u2936.png" crc="4147018167" ref="index"/>
+    <file name="1solitadato_poster_u6667.png" crc="4147018167" ref="index"/>
     <file name="1solano.svg" crc="3995959095" ref="index"/>
     <file name="1solano_poster_u2493.png" crc="3964794913" ref="index"/>
     <file name="1solano_1.svg" crc="155621392" ref="index"/>
@@ -116,7 +118,13 @@
     <file name="1solitaroll.svg" crc="3942052581" ref="index"/>
     <file name="1solitaroll_poster_u2518.png" crc="4271199803" ref="index"/>
     <file name="1fuente familias.svg" crc="4271029412" ref="index"/>
-    <file name="1fuente familias_poster_u3018.png" crc="3899154912" ref="index"/>
+    <file name="1fuente familias_poster_u6651.png" crc="3899154912" ref="index"/>
+    <file name="1lineamapa.svg" crc="3902257368" ref="index"/>
+    <file name="1lineamapa_poster_u5921.png" crc="423068656" ref="index"/>
+    <file name="1florencia2018.svg" crc="4146491593" ref="index"/>
+    <file name="1florencia2018_poster_u3426.png" crc="4281696829" ref="index"/>
+    <file name="1morelia2018.svg" crc="282196575" ref="index"/>
+    <file name="1morelia2018_poster_u6531.png" crc="261204136" ref="index"/>
   </folder>
-  <file name="index.html" crc="4092959564" seo="true" mt="1542478583998" redirect="true"/>
+  <file name="index.html" crc="3976727333" seo="true" mt="1542995598022" redirect="true"/>
 </manifest>
