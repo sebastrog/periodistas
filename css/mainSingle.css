@@ -1083,6 +1083,10 @@ button.slick-next.slick-arrow {
     background-color: #fff;
 }
 
+.plainSection p {
+    font-family: 'Aleo Regular';
+}
+
 .theimagefull {
     height: 600px;
 }
