@@ -1460,6 +1460,9 @@ button.slick-next.slick-arrow {
         font-size: 25px;
         text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.9);
     }
+    .section.plainSection {
+        padding: 30px 0;
+    }
     .bigowlca .owl-prev,
     .bigowlca .owl-next {
         /* top: 15%; */
