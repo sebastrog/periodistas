@@ -1089,7 +1089,7 @@ button.slick-next.slick-arrow {
 }
 
 .plainSection h3 {
-    font-family: 'Aleo Regular';
+    font-family: 'Aleo Bold';
 }
 
 .theimagefull {
@@ -1592,6 +1592,9 @@ button.slick-next.slick-arrow {
     }
     .coverlanding .wrapper-landing {
         padding: 50px 0;
+    }
+    .theimagefull img {
+        object-position: center;
     }
 }
 
