@@ -1602,7 +1602,10 @@ button.slick-next.slick-arrow {
     .headeR.activeH .white-background-items-menu {
         top: 40px;
     }
-}
+    .lineatiempo-numero2 .timeline-content-item2 .timeline-content-item-reveal2 a img,
+    .lineatiempo-numero .timeline-content-item .timeline-content-item-reveal a img  {
+        max-width: 100%;
+    }
 
 #idmap2 {
     /* background-color: red; */
