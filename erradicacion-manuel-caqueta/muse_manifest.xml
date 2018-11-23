@@ -1,0 +1,198 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="erradicacion.com" resolutions="1x" timestamp="1542739018291">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="312764544" ref="index"/>
+    <file name="nomq_index.css" crc="28917165" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="310584261" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="1fuente 2.svg" crc="4056272797" ref="index"/>
+    <file name="1fuente 2_poster_u6624.png" crc="200206968" ref="index"/>
+    <file name="1caqueta.svg" crc="4006452598" ref="index"/>
+    <file name="1caqueta_poster_u2550.png" crc="387368582" ref="index"/>
+    <file name="1sanvicente2016.svg" crc="4153571968" ref="index"/>
+    <file name="1sanvicente2016_poster_u2852.png" crc="4222658947" ref="index"/>
+    <file name="1solano2016.svg" crc="4003254035" ref="index"/>
+    <file name="1solano2016_poster_u2964.png" crc="138142133" ref="index"/>
+    <file name="1cartagena2016.svg" crc="4081880884" ref="index"/>
+    <file name="1cartagena2016_poster_u2956.png" crc="3918280255" ref="index"/>
+    <file name="1montanita2016.svg" crc="274114710" ref="index"/>
+    <file name="1montanita2016_poster_u2884.png" crc="19046498" ref="index"/>
+    <file name="1puertorico2016.svg" crc="266986222" ref="index"/>
+    <file name="1puertorico2016_poster_u2860.png" crc="206682592" ref="index"/>
+    <file name="1eldoncello2016.svg" crc="325536017" ref="index"/>
+    <file name="1eldoncello2016_poster_u2948.png" crc="514691535" ref="index"/>
+    <file name="1florencia 2016.svg" crc="3811765534" ref="index"/>
+    <file name="1florencia 2016_poster_u2876.png" crc="389038178" ref="index"/>
+    <file name="1elpaujil2016.svg" crc="155576147" ref="index"/>
+    <file name="1elpaujil2016_poster_u2940.png" crc="3938732355" ref="index"/>
+    <file name="1milan2016.svg" crc="3935454196" ref="index"/>
+    <file name="1milan2016_poster_u2892.png" crc="511699354" ref="index"/>
+    <file name="1valparaiso2016.svg" crc="513392654" ref="index"/>
+    <file name="1valparaiso2016_poster_u2900.png" crc="4049700328" ref="index"/>
+    <file name="1sanjose2016.svg" crc="422555648" ref="index"/>
+    <file name="1sanjose2016_poster_u2916.png" crc="3893577408" ref="index"/>
+    <file name="1curillo2016.svg" crc="88191563" ref="index"/>
+    <file name="1curillo2016_poster_u2924.png" crc="478219658" ref="index"/>
+    <file name="1belen2016.svg" crc="199942633" ref="index"/>
+    <file name="1belen2016_poster_u2908.png" crc="4194164119" ref="index"/>
+    <file name="1albania2016.svg" crc="494514215" ref="index"/>
+    <file name="1albania2016_poster_u2980.png" crc="270314525" ref="index"/>
+    <file name="1morelia sin registro.svg" crc="4150215857" ref="index"/>
+    <file name="1morelia sin registro_poster_u6571.png" crc="67140647" ref="index"/>
+    <file name="1solita2016.svg" crc="19229641" ref="index"/>
+    <file name="1solita2016_poster_u2932.png" crc="4051105417" ref="index"/>
+    <file name="1sanvicente.svg" crc="4181555378" ref="index"/>
+    <file name="1sanvicente_poster_u2034.png" crc="164069446" ref="index"/>
+    <file name="1sanvicenteroll.svg" crc="429228033" ref="index"/>
+    <file name="1sanvicenteroll_poster_u2042.png" crc="3774961415" ref="index"/>
+    <file name="1solano.svg" crc="3995959095" ref="index"/>
+    <file name="1solano_poster_u2493.png" crc="3964794913" ref="index"/>
+    <file name="1solano_1.svg" crc="155621392" ref="index"/>
+    <file name="1solano_1_poster_u2485.png" crc="4239004313" ref="index"/>
+    <file name="1cartagena.svg" crc="3830292571" ref="index"/>
+    <file name="1cartagena_poster_u2468.png" crc="3823142674" ref="index"/>
+    <file name="1cartagenaroll.svg" crc="3915523297" ref="index"/>
+    <file name="1cartagenaroll_poster_u2460.png" crc="511999845" ref="index"/>
+    <file name="1lamontanita.svg" crc="5683352" ref="index"/>
+    <file name="1lamontanita_poster_u2219.png" crc="3968411614" ref="index"/>
+    <file name="1lamontanitaroll.svg" crc="3971043709" ref="index"/>
+    <file name="1lamontanitaroll_poster_u2211.png" crc="116997699" ref="index"/>
+    <file name="1puertorico.svg" crc="305323496" ref="index"/>
+    <file name="1puertorico_poster_u2071.png" crc="3866116230" ref="index"/>
+    <file name="1puertoricoroll_1.svg" crc="352524351" ref="index"/>
+    <file name="1puertoricoroll_1_poster_u2079.png" crc="3772054991" ref="index"/>
+    <file name="1eldoncello.svg" crc="4079612536" ref="index"/>
+    <file name="1eldoncello_poster_u2108.png" crc="4240199263" ref="index"/>
+    <file name="1eldoncelloroll.svg" crc="230196202" ref="index"/>
+    <file name="1eldoncelloroll_poster_u2100.png" crc="4099238704" ref="index"/>
+    <file name="1florencia.svg" crc="4181125125" ref="index"/>
+    <file name="1florencia_poster_u2190.png" crc="199620092" ref="index"/>
+    <file name="1florenciaroll.svg" crc="27594197" ref="index"/>
+    <file name="1florenciaroll_poster_u2182.png" crc="4054741622" ref="index"/>
+    <file name="1elpaujil.svg" crc="3855285394" ref="index"/>
+    <file name="1elpaujil_poster_u2161.png" crc="223303141" ref="index"/>
+    <file name="1elpaujilroll.svg" crc="3945753731" ref="index"/>
+    <file name="1elpaujilroll_poster_u2153.png" crc="3778811068" ref="index"/>
+    <file name="1milan.svg" crc="4281919701" ref="index"/>
+    <file name="1milan_poster_u2269.png" crc="3855465703" ref="index"/>
+    <file name="1milanroll.svg" crc="184649931" ref="index"/>
+    <file name="1milanroll_poster_u2261.png" crc="3790502530" ref="index"/>
+    <file name="1valparaiso.svg" crc="511299343" ref="index"/>
+    <file name="1valparaiso_poster_u2298.png" crc="3815519155" ref="index"/>
+    <file name="1valparaisoroll.svg" crc="105121104" ref="index"/>
+    <file name="1valparaisoroll_poster_u2290.png" crc="3892434577" ref="index"/>
+    <file name="1sanjose.svg" crc="11751606" ref="index"/>
+    <file name="1sanjose_poster_u2348.png" crc="46476039" ref="index"/>
+    <file name="1sanjoseroll.svg" crc="3904194865" ref="index"/>
+    <file name="1sanjoseroll_poster_u2340.png" crc="108239268" ref="index"/>
+    <file name="1curillo.svg" crc="3941219012" ref="index"/>
+    <file name="1curillo_poster_u2373.png" crc="3984861672" ref="index"/>
+    <file name="1curilloroll.svg" crc="30643023" ref="index"/>
+    <file name="1curilloroll_poster_u2365.png" crc="4115434420" ref="index"/>
+    <file name="1belen.svg" crc="477979063" ref="index"/>
+    <file name="1belen_poster_u2402.png" crc="424650854" ref="index"/>
+    <file name="1belenroll.svg" crc="4137575441" ref="index"/>
+    <file name="1belenroll_poster_u2394.png" crc="104056475" ref="index"/>
+    <file name="1albania.svg" crc="162809466" ref="index"/>
+    <file name="1albania_poster_u2323.png" crc="4267744066" ref="index"/>
+    <file name="1albaniaroll.svg" crc="3907048053" ref="index"/>
+    <file name="1albaniaroll_poster_u2315.png" crc="3853115117" ref="index"/>
+    <file name="1morelia.svg" crc="104307205" ref="index"/>
+    <file name="1morelia_poster_u2443.png" crc="4281091699" ref="index"/>
+    <file name="1moreliaroll.svg" crc="3889154421" ref="index"/>
+    <file name="1moreliaroll_poster_u2435.png" crc="4205104497" ref="index"/>
+    <file name="1solita.svg" crc="3998635662" ref="index"/>
+    <file name="1solita_poster_u2526.png" crc="140094786" ref="index"/>
+    <file name="1solitaroll.svg" crc="3942052581" ref="index"/>
+    <file name="1solitaroll_poster_u2518.png" crc="4271199803" ref="index"/>
+    <file name="1solano2017.svg" crc="207352183" ref="index"/>
+    <file name="1solano2017_poster_u3346.png" crc="219939901" ref="index"/>
+    <file name="1cartagena2017.svg" crc="4010993061" ref="index"/>
+    <file name="1cartagena2017_poster_u3338.png" crc="4160914170" ref="index"/>
+    <file name="1sanvicente2017.svg" crc="311823744" ref="index"/>
+    <file name="1sanvicente2017_poster_u3330.png" crc="332670916" ref="index"/>
+    <file name="1puertorico2017.svg" crc="3763163848" ref="index"/>
+    <file name="1puertorico2017_poster_u3322.png" crc="3870719927" ref="index"/>
+    <file name="1eldoncello2017.svg" crc="3786846663" ref="index"/>
+    <file name="1eldoncello2017_poster_u3314.png" crc="4212860108" ref="index"/>
+    <file name="1florencia2017.svg" crc="148991863" ref="index"/>
+    <file name="1florencia2017_poster_u3306.png" crc="313474609" ref="index"/>
+    <file name="1montanita2017.svg" crc="4220154599" ref="index"/>
+    <file name="1montanita2017_poster_u3298.png" crc="30864472" ref="index"/>
+    <file name="1elpaujil2017.svg" crc="449215185" ref="index"/>
+    <file name="1elpaujil2017_poster_u3290.png" crc="3836099810" ref="index"/>
+    <file name="1milan2017.svg" crc="66006494" ref="index"/>
+    <file name="1milan2017_poster_u3282.png" crc="3978532454" ref="index"/>
+    <file name="1valparaiso2017.svg" crc="125792339" ref="index"/>
+    <file name="1valparaiso2017_poster_u3274.png" crc="383398176" ref="index"/>
+    <file name="1sanjose2017.svg" crc="243470127" ref="index"/>
+    <file name="1sanjose2017_poster_u3266.png" crc="4022766958" ref="index"/>
+    <file name="1curillo2017.svg" crc="4254195545" ref="index"/>
+    <file name="1curillo2017_poster_u3258.png" crc="155156412" ref="index"/>
+    <file name="1belen2017.svg" crc="486564672" ref="index"/>
+    <file name="1belen2017_poster_u3250.png" crc="501075384" ref="index"/>
+    <file name="1albania2017.svg" crc="165337103" ref="index"/>
+    <file name="1albania2017_poster_u3242.png" crc="219560578" ref="index"/>
+    <file name="1solita2017.svg" crc="3824175023" ref="index"/>
+    <file name="1solita2017_poster_u3234.png" crc="3902598667" ref="index"/>
+    <file name="1solano2018.svg" crc="441808282" ref="index"/>
+    <file name="1solano2018_poster_u3494.png" crc="3802451942" ref="index"/>
+    <file name="1cartagena2018.svg" crc="358834514" ref="index"/>
+    <file name="1cartagena2018_poster_u3458.png" crc="4933127" ref="index"/>
+    <file name="1sanvicente2018.svg" crc="397284279" ref="index"/>
+    <file name="1sanvicente2018_poster_u3450.png" crc="481389604" ref="index"/>
+    <file name="1puertorico2018.svg" crc="4213427704" ref="index"/>
+    <file name="1puertorico2018_poster_u3442.png" crc="198892146" ref="index"/>
+    <file name="1eldoncello2018.svg" crc="4193759931" ref="index"/>
+    <file name="1eldoncello2018_poster_u3434.png" crc="71751082" ref="index"/>
+    <file name="1florencia sin registro.svg" crc="4190019313" ref="index"/>
+    <file name="1florencia sin registro_poster_u6595.png" crc="226237820" ref="index"/>
+    <file name="1montanita2018.svg" crc="55739564" ref="index"/>
+    <file name="1montanita2018_poster_u3418.png" crc="357229905" ref="index"/>
+    <file name="1paujil2018.svg" crc="4066417402" ref="index"/>
+    <file name="1paujil2018_poster_u3410.png" crc="277953198" ref="index"/>
+    <file name="1milan2018.svg" crc="159887875" ref="index"/>
+    <file name="1milan2018_poster_u3402.png" crc="3949915561" ref="index"/>
+    <file name="1valparaiso sin registro.svg" crc="59802029" ref="index"/>
+    <file name="1valparaiso sin registro_poster_u6587.png" crc="505435684" ref="index"/>
+    <file name="1sanjose2018.svg" crc="510996058" ref="index"/>
+    <file name="1sanjose2018_poster_u3386.png" crc="234847014" ref="index"/>
+    <file name="1curillo20118.svg" crc="4291551507" ref="index"/>
+    <file name="1curillo20118_poster_u3378.png" crc="195136489" ref="index"/>
+    <file name="1belen2018.svg" crc="17959714" ref="index"/>
+    <file name="1belen2018_poster_u3370.png" crc="4209482693" ref="index"/>
+    <file name="1albania sin registro.svg" crc="3849545845" ref="index"/>
+    <file name="1albania sin registro_poster_u6579.png" crc="4054139576" ref="index"/>
+    <file name="1solita sin registro.svg" crc="96311626" ref="index"/>
+    <file name="1solita sin registro_poster_u6563.png" crc="4107215836" ref="index"/>
+    <file name="1lineamapa.svg" crc="3902257368" ref="index"/>
+    <file name="1lineamapa_poster_u5921.png" crc="423068656" ref="index"/>
+    <file name="1fuente erradicar.svg" crc="4003485575" ref="index"/>
+    <file name="1fuente erradicar_poster_u3521.png" crc="4212407709" ref="index"/>
+    <file name="1florencia2018.svg" crc="4146491593" ref="index"/>
+    <file name="1florencia2018_poster_u3426.png" crc="4281696829" ref="index"/>
+    <file name="1valparaiso2018.svg" crc="4280929925" ref="index"/>
+    <file name="1valparaiso2018_poster_u3394.png" crc="3862757367" ref="index"/>
+    <file name="1albania2018.svg" crc="4130559012" ref="index"/>
+    <file name="1albania2018_poster_u3362.png" crc="104232375" ref="index"/>
+    <file name="1morelia2018.svg" crc="282196575" ref="index"/>
+    <file name="1morelia2018_poster_u6531.png" crc="261204136" ref="index"/>
+    <file name="1solita2018.svg" crc="397138040" ref="index"/>
+    <file name="1solita2018_poster_u3354.png" crc="3821713122" ref="index"/>
+  </folder>
+  <file name="index.html" crc="113772343" seo="true" mt="1542738920146" redirect="true"/>
+</manifest>
