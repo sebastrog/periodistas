@@ -1087,6 +1087,10 @@ button.slick-next.slick-arrow {
     font-family: 'Aleo Regular';
 }
 
+.plainSection h3 {
+    font-family: 'Aleo Regular';
+}
+
 .theimagefull {
     height: 600px;
 }
