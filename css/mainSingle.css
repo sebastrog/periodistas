@@ -1593,7 +1593,7 @@
             .thecoverimagegallery {
                 height: 200px;
             }
-            .owl-prev .owl-carousel-foot-relative,
+            .owl-carousel-foot-relative .owl-prev,
             .owl-carousel-foot-relative .owl-next {
                 top: 15%;
             }
