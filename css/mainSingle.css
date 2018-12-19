@@ -1626,7 +1626,9 @@
                 font-style: italic;
             }
             .sec1 {
-                height: 93vh;
                 background-position: center;
+            }
+            .sec1.narino {
+                height: 93vh;
             }
         }
